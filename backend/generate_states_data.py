@@ -1,0 +1,2119 @@
+"""
+Generator for us_states.json containing all 50 US States
+Demographic, Cultural, Religious, Military, and Lifestyle Intelligence.
+"""
+import json
+import os
+
+STATES_DATA = [
+    {
+        "code": "AL",
+        "name": "Alabama",
+        "nickname": "Yellowhammer State",
+        "motto": "Audemus jura nostra defendere (We Dare Defend Our Rights)",
+        "capital": "Montgomery",
+        "region": "Southeast / Deep South",
+        "demographics": {
+            "population": 5074296,
+            "median_age": 39.4,
+            "gender": {"male": 48.5, "female": 51.5},
+            "race_ethnicity": {"white": 65.1, "black": 26.8, "hispanic": 4.6, "asian": 1.5, "native_american": 0.7, "other": 1.3},
+            "veteran_population": 348000,
+            "veteran_percentage": 8.7
+        },
+        "religion_values": {
+            "christian_pct": 86,
+            "evangelical_pct": 49,
+            "catholic_pct": 7,
+            "mainline_protestant_pct": 13,
+            "unaffiliated_pct": 12
+        },
+        "cultural_heritage": {
+            "symbols": ["Yellowhammer", "Camellia", "Southern Longleaf Pine", "Redstone Arsenal Rocket", "Confederate Rose"],
+            "state_bird": "Yellowhammer (Northern Flicker)",
+            "state_flower": "Camellia",
+            "state_tree": "Longleaf Pine",
+            "regional_vibe": "Deep South heritage, Rocket City innovation, iron grit, legendary college football pride, Southern hospitality",
+            "military_ties": ["Redstone Arsenal (Huntsville)", "Maxwell-Gunter AFB (Air University)", "Fort Novosel (Army Aviation Center)", "Anniston Army Depot"],
+            "popular_slogans": [
+                "Sweet Home Alabama: Land of the Free, Home of the Brave",
+                "Heart of Dixie Veteran: God, Country, Crimson & Gold",
+                "Alabama Born, Army Forged: Defending Rights Since 1819"
+            ],
+            "lifestyle_environments": [
+                "Southern wrap-around porch with rocking chairs and American flag",
+                "Pine forested countryside tailgating setting",
+                "Suburban garage workshop with veteran military shadowbox"
+            ],
+            "archetype_prompt": "Southern veteran with proud friendly demeanor, wearing tactical boots and denim, golden hour lighting on a rustic wooden porch"
+        }
+    },
+    {
+        "code": "AK",
+        "name": "Alaska",
+        "nickname": "The Last Frontier",
+        "motto": "North to the Future",
+        "capital": "Juneau",
+        "region": "Pacific Northwest / Arctic",
+        "demographics": {
+            "population": 733583,
+            "median_age": 35.6,
+            "gender": {"male": 52.1, "female": 47.9},
+            "race_ethnicity": {"white": 60.2, "black": 3.7, "hispanic": 7.3, "asian": 6.5, "native_american": 15.6, "other": 6.7},
+            "veteran_population": 66000,
+            "veteran_percentage": 11.8
+        },
+        "religion_values": {
+            "christian_pct": 62,
+            "evangelical_pct": 22,
+            "catholic_pct": 16,
+            "mainline_protestant_pct": 12,
+            "unaffiliated_pct": 31
+        },
+        "cultural_heritage": {
+            "symbols": ["Moose", "Willow Ptarmigan", "Big Dipper Flag", "Denali", "Sitka Spruce", "Dog Sledding"],
+            "state_bird": "Willow Ptarmigan",
+            "state_flower": "Alpine Forget-Me-Not",
+            "state_tree": "Sitka Spruce",
+            "regional_vibe": "Rugged wilderness, extreme survival grit, frontier independence, highest per capita veteran population",
+            "military_ties": ["Joint Base Elmendorf-Richardson (JBER)", "Eielson AFB (F-35 interceptors)", "Fort Wainwright (11th Airborne Arctic Angels)", "Coast Guard Base Kodiak"],
+            "popular_slogans": [
+                "The Last Frontier, The First Line of Defense",
+                "Alaska Veteran: Arctic Tough, Tested in the Tundra",
+                "North to the Future, Loyal to the End"
+            ],
+            "lifestyle_environments": [
+                "Rugged log cabin exterior surrounded by snow-capped Alaskan mountains",
+                "Floatplane dock next to a crystal glacial lake",
+                "Timber-framed workshop with hunting and tactical gear"
+            ],
+            "archetype_prompt": "Rugged bearded Alaskan outdoorsman and veteran, layered flannel and tactical canvas, crisp mountain air backdrop"
+        }
+    },
+    {
+        "code": "AZ",
+        "name": "Arizona",
+        "nickname": "The Grand Canyon State",
+        "motto": "Ditat Deus (God Enriches)",
+        "capital": "Phoenix",
+        "region": "Southwest",
+        "demographics": {
+            "population": 7431344,
+            "median_age": 38.2,
+            "gender": {"male": 49.8, "female": 50.2},
+            "race_ethnicity": {"white": 53.4, "black": 5.2, "hispanic": 32.5, "asian": 3.7, "native_american": 4.5, "other": 0.7},
+            "veteran_population": 505000,
+            "veteran_percentage": 8.6
+        },
+        "religion_values": {
+            "christian_pct": 67,
+            "evangelical_pct": 26,
+            "catholic_pct": 21,
+            "mainline_protestant_pct": 12,
+            "unaffiliated_pct": 26
+        },
+        "cultural_heritage": {
+            "symbols": ["Saguaro Cactus", "Cactus Wren", "Turquoise", "Grand Canyon", "Copper Star Flag"],
+            "state_bird": "Cactus Wren",
+            "state_flower": "Saguaro Cactus Blossom",
+            "state_tree": "Palo Verde",
+            "regional_vibe": "Desert resilience, sun-baked independence, copper mining roots, vibrant Hispanic-American heritage",
+            "military_ties": ["Luke AFB (F-35 Training)", "Davis-Monthan AFB (The Boneyard & A-10 Warthogs)", "Fort Huachuca (Army Intelligence)", "Yuma Proving Ground"],
+            "popular_slogans": [
+                "Forged in the Desert Sun: Arizona Veteran",
+                "Stand Tall Like the Saguaro: Arizona Strong",
+                "Copper State Pride: God Enriches, Veterans Defend"
+            ],
+            "lifestyle_environments": [
+                "Sonoran desert landscape with towering saguaros at golden sunset",
+                "Adobe ranch terrace with weathered timber beams and fire pit",
+                "Modern desert homestead workshop with dust-covered off-road vehicle"
+            ],
+            "archetype_prompt": "Sun-tanned Southwest veteran with aviator sunglasses, desert tactical styling, warm desert sunset background"
+        }
+    },
+    {
+        "code": "AR",
+        "name": "Arkansas",
+        "nickname": "The Natural State",
+        "motto": "Regnat Populus (The People Rule)",
+        "capital": "Little Rock",
+        "region": "South / Ozarks",
+        "demographics": {
+            "population": 3045637,
+            "median_age": 38.6,
+            "gender": {"male": 49.1, "female": 50.9},
+            "race_ethnicity": {"white": 70.1, "black": 15.3, "hispanic": 8.5, "asian": 1.7, "native_american": 0.9, "other": 3.5},
+            "veteran_population": 208000,
+            "veteran_percentage": 8.7
+        },
+        "religion_values": {
+            "christian_pct": 79,
+            "evangelical_pct": 46,
+            "catholic_pct": 8,
+            "mainline_protestant_pct": 16,
+            "unaffiliated_pct": 18
+        },
+        "cultural_heritage": {
+            "symbols": ["Mockingbird", "Apple Blossom", "Diamond", "Razorback", "Pine Trees", "Ozark Mountains"],
+            "state_bird": "Mockingbird",
+            "state_flower": "Apple Blossom",
+            "state_tree": "Loblolly Pine",
+            "regional_vibe": "Ozark timber grit, mountain folk resilience, sportsman hunting culture, deep-rooted faith",
+            "military_ties": ["Little Rock AFB (C-130 Hercules Hub)", "Pine Bluff Arsenal", "Fort Chaffee Joint Maneuver Training Center"],
+            "popular_slogans": [
+                "Natural State, Unbreakable Spirit: Arkansas Veteran",
+                "Ozark Mountain Tough: Born to Hunt, Sworn to Defend",
+                "Faith, Family, Freedom: True Arkansas Grit"
+            ],
+            "lifestyle_environments": [
+                "Ozark lakeside pier with dense pine tree reflections",
+                "Rustic country cabin with antler mounts and wood stove",
+                "Pickup truck tailgate in open wooded field"
+            ],
+            "archetype_prompt": "Hardworking Ozark woodsman and veteran with baseball cap and rugged jeans, timber countryside backdrop"
+        }
+    },
+    {
+        "code": "CA",
+        "name": "California",
+        "nickname": "The Golden State",
+        "motto": "Eureka (I Have Found It)",
+        "capital": "Sacramento",
+        "region": "West Coast",
+        "demographics": {
+            "population": 39029342,
+            "median_age": 37.3,
+            "gender": {"male": 49.7, "female": 50.3},
+            "race_ethnicity": {"white": 34.7, "black": 5.7, "hispanic": 40.2, "asian": 15.9, "native_american": 0.5, "other": 3.0},
+            "veteran_population": 1560000,
+            "veteran_percentage": 5.1
+        },
+        "religion_values": {
+            "christian_pct": 63,
+            "evangelical_pct": 20,
+            "catholic_pct": 28,
+            "mainline_protestant_pct": 10,
+            "unaffiliated_pct": 27
+        },
+        "cultural_heritage": {
+            "symbols": ["California Grizzly Bear", "California Poppy", "Coast Redwood", "Golden Gate", "Pacific Waves"],
+            "state_bird": "California Quail",
+            "state_flower": "California Poppy",
+            "state_tree": "California Redwood",
+            "regional_vibe": "Pacific coastal energy, Marine Corps heritage, high tech innovation, diverse cultural powerhouse",
+            "military_ties": ["Camp Pendleton (1st Marine Expeditionary Force)", "Naval Base San Diego (Pacific Fleet)", "Coronado Naval Amphibious Base (Navy SEALs)", "Edwards AFB", "Travis AFB"],
+            "popular_slogans": [
+                "Golden State Defender: Pacific Coast Veteran",
+                "Camp Pendleton Forged: The Few, The Proud, The Californian",
+                "From Pacific Shores to Desert Sands: Honoring California Veterans"
+            ],
+            "lifestyle_environments": [
+                "Pacific coastal overlook with dramatic cliffs and ocean surf",
+                "San Diego bay marina with historic naval carriers in the distance",
+                "Redwood forest outdoor trail with dappled morning sunlight"
+            ],
+            "archetype_prompt": "Athletic Pacific veteran wearing aviators, coastal breeze, rugged casual denim and tactical watch, coastal cliffs background"
+        }
+    },
+    {
+        "code": "CO",
+        "name": "Colorado",
+        "nickname": "The Centennial State",
+        "motto": "Nil sine Numine (Nothing Without the Deity)",
+        "capital": "Denver",
+        "region": "Mountain West",
+        "demographics": {
+            "population": 5877610,
+            "median_age": 37.5,
+            "gender": {"male": 50.4, "female": 49.6},
+            "race_ethnicity": {"white": 67.5, "black": 4.1, "hispanic": 22.3, "asian": 3.6, "native_american": 1.0, "other": 1.5},
+            "veteran_population": 375000,
+            "veteran_percentage": 8.0
+        },
+        "religion_values": {
+            "christian_pct": 64,
+            "evangelical_pct": 26,
+            "catholic_pct": 16,
+            "mainline_protestant_pct": 15,
+            "unaffiliated_pct": 29
+        },
+        "cultural_heritage": {
+            "symbols": ["Rocky Mountain Bighorn Sheep", "Colorado Blue Spruce", "White and Lavender Columbine", "Fourteeners", "Centennial 'C' Flag"],
+            "state_bird": "Lark Bunting",
+            "state_flower": "Rocky Mountain Columbine",
+            "state_tree": "Colorado Blue Spruce",
+            "regional_vibe": "Alpine resilience, aerospace & space defense pioneer, outdoor adventurous lifestyle, elevated independence",
+            "military_ties": ["US Air Force Academy (Colorado Springs)", "Fort Carson (4th Infantry Division)", "Peterson Space Force Base", "Schriever Space Force Base", "NORAD Cheyenne Mountain"],
+            "popular_slogans": [
+                "Mile High Patriot: Rocky Mountain Veteran",
+                "Forged at 14,000 Feet: Colorado Defenders of Freedom",
+                "Centennial Pride: Guardians of High Ground"
+            ],
+            "lifestyle_environments": [
+                "Rocky Mountain scenic vista with pine trees and granite peaks",
+                "Colorado mountain pass with off-road overland rig",
+                "Rustic alpine timber brewery patio with mountain backdrop"
+            ],
+            "archetype_prompt": "Fit outdoor mountain veteran in rugged tactical flannel, sharp alpine sunlight, Rocky Mountain panoramic peak background"
+        }
+    },
+    {
+        "code": "CT",
+        "name": "Connecticut",
+        "nickname": "The Constitution State",
+        "motto": "Qui Transtulit Sustinet (He Who Transplanted Still Sustains)",
+        "capital": "Hartford",
+        "region": "New England",
+        "demographics": {
+            "population": 3626205,
+            "median_age": 41.1,
+            "gender": {"male": 48.8, "female": 51.2},
+            "race_ethnicity": {"white": 63.8, "black": 11.2, "hispanic": 17.7, "asian": 5.0, "native_american": 0.4, "other": 1.9},
+            "veteran_population": 162000,
+            "veteran_percentage": 5.5
+        },
+        "religion_values": {
+            "christian_pct": 70,
+            "evangelical_pct": 13,
+            "catholic_pct": 33,
+            "mainline_protestant_pct": 17,
+            "unaffiliated_pct": 23
+        },
+        "cultural_heritage": {
+            "symbols": ["Charter Oak", "Mountain Laurel", "American Robin", "Submarine Capital", "Historic Sailing Ships"],
+            "state_bird": "American Robin",
+            "state_flower": "Mountain Laurel",
+            "state_tree": "Charter Oak",
+            "regional_vibe": "Submarine silent service heritage, historic maritime craftsmanship, colonial constitutional roots",
+            "military_ties": ["Naval Submarine Base New London (Groton - Sub Capital of the World)", "Coast Guard Academy (New London)", "Sikorsky Aircraft (Black Hawk helicopter base)"],
+            "popular_slogans": [
+                "Silent Service Strong: Submarine Capital Veteran",
+                "Constitution State Pride: First in Freedom, Steadfast in Service",
+                "From New London to the Deep: Connecticut Veterans"
+            ],
+            "lifestyle_environments": [
+                "Historic coastal harbor with wooden docks and nautical ropes",
+                "New England colonial brick street lined with mature maples",
+                "Submarine memorial park overlooking Long Island Sound"
+            ],
+            "archetype_prompt": "Distinguished naval veteran in dark utility jacket, clean-cut, crisp ocean harbor backdrop with navy vessel silhouette"
+        }
+    },
+    {
+        "code": "DE",
+        "name": "Delaware",
+        "nickname": "The First State",
+        "motto": "Liberty and Independence",
+        "capital": "Dover",
+        "region": "Mid-Atlantic",
+        "demographics": {
+            "population": 1018396,
+            "median_age": 41.4,
+            "gender": {"male": 48.4, "female": 51.6},
+            "race_ethnicity": {"white": 59.8, "black": 22.8, "hispanic": 10.1, "asian": 4.3, "native_american": 0.5, "other": 2.5},
+            "veteran_population": 68000,
+            "veteran_percentage": 8.4
+        },
+        "religion_values": {
+            "christian_pct": 69,
+            "evangelical_pct": 15,
+            "catholic_pct": 22,
+            "mainline_protestant_pct": 21,
+            "unaffiliated_pct": 23
+        },
+        "cultural_heritage": {
+            "symbols": ["Blue Hen Chicken", "Peach Blossom", "American Holly", "Delaware River", "Historic Fort Delaware"],
+            "state_bird": "Blue Hen Chicken",
+            "state_flower": "Peach Blossom",
+            "state_tree": "American Holly",
+            "regional_vibe": "The First State to ratify the Constitution, strategic airlift hub, coastal marshland heritage",
+            "military_ties": ["Dover AFB (C-5 Galaxy, C-17 Globemaster, Air Mobility Command & Mortuary Affairs)"],
+            "popular_slogans": [
+                "The First State, The Last Line: Delaware Veteran",
+                "Liberty and Independence: Dover Air Mobility Strong",
+                "First to Ratify, Always Ready to Defend"
+            ],
+            "lifestyle_environments": [
+                "Coastal bayfront with marsh grasses and gentle waves",
+                "Air mobility tarmac adjacent hangar at sunset",
+                "Historic town green with colonial architecture and flag display"
+            ],
+            "archetype_prompt": "Proud Air Force veteran with aviator frame glasses, confident stance, clean suburban setting with US flag"
+        }
+    },
+    {
+        "code": "FL",
+        "name": "Florida",
+        "nickname": "The Sunshine State",
+        "motto": "In God We Trust",
+        "capital": "Tallahassee",
+        "region": "Southeast",
+        "demographics": {
+            "population": 22244823,
+            "median_age": 42.7,
+            "gender": {"male": 49.0, "female": 51.0},
+            "race_ethnicity": {"white": 51.5, "black": 15.1, "hispanic": 27.1, "asian": 3.0, "native_american": 0.4, "other": 2.9},
+            "veteran_population": 1440000,
+            "veteran_percentage": 8.0
+        },
+        "religion_values": {
+            "christian_pct": 70,
+            "evangelical_pct": 24,
+            "catholic_pct": 21,
+            "mainline_protestant_pct": 14,
+            "unaffiliated_pct": 24
+        },
+        "cultural_heritage": {
+            "symbols": ["Florida Panther", "Orange Blossom", "Sabal Palm", "Alligator", "Space Coast Rockets", "Spanish Moss"],
+            "state_bird": "Northern Mockingbird",
+            "state_flower": "Orange Blossom",
+            "state_tree": "Sabal Palm",
+            "regional_vibe": "Coastal sunshine, massive veteran retiree and active duty population, aerospace frontier, tropical tenacity",
+            "military_ties": ["MacDill AFB (US CENTCOM & US SOCOM)", "Naval Air Station Pensacola (Cradle of Naval Aviation & Blue Angels)", "Naval Station Mayport", "Eglin AFB (Air Force Materiel Command)", "Patrick Space Force Base"],
+            "popular_slogans": [
+                "Sunshine & Steel: Proud Florida Veteran",
+                "Cradle of Naval Aviators: Florida Skies, American Freedom",
+                "In God We Trust, In Our Veterans We Believe: Florida Strong"
+            ],
+            "lifestyle_environments": [
+                "Sun-drenched coastal palm boardwalk with marina boats in background",
+                "Covered lanai patio next to backyard pool and grill",
+                "Open boat deck on turquoise saltwater inlet at golden hour"
+            ],
+            "archetype_prompt": "Relaxed yet sharp veteran with sun-bleached hair and boat shoes, wearing sunglasses, tropical coastal Florida dockside setting"
+        }
+    },
+    {
+        "code": "GA",
+        "name": "Georgia",
+        "nickname": "The Peach State",
+        "motto": "Wisdom, Justice, and Moderation",
+        "capital": "Atlanta",
+        "region": "Southeast",
+        "demographics": {
+            "population": 10912876,
+            "median_age": 37.3,
+            "gender": {"male": 48.7, "female": 51.3},
+            "race_ethnicity": {"white": 50.1, "black": 31.4, "hispanic": 10.5, "asian": 4.6, "native_american": 0.5, "other": 2.9},
+            "veteran_population": 694000,
+            "veteran_percentage": 8.0
+        },
+        "religion_values": {
+            "christian_pct": 79,
+            "evangelical_pct": 38,
+            "catholic_pct": 9,
+            "mainline_protestant_pct": 12,
+            "unaffiliated_pct": 18
+        },
+        "cultural_heritage": {
+            "symbols": ["Brown Thrasher", "Cherokee Rose", "Live Oak", "Georgia Peach", "Southern Pine", "Savannah Historic Squares"],
+            "state_bird": "Brown Thrasher",
+            "state_flower": "Cherokee Rose",
+            "state_tree": "Live Oak",
+            "regional_vibe": "Infantry capital, southern pride, lush live oak canopies, booming film and logistics metropolis",
+            "military_ties": ["Fort Moore (formerly Fort Benning - Home of the Infantry & Airborne School)", "Fort Eisenhower (formerly Fort Gordon - Cyber Command)", "Fort Stewart (3rd Infantry Division)", "Moody AFB", "Robins AFB"],
+            "popular_slogans": [
+                "Follow Me! Home of the Infantry: Georgia Airborne Veteran",
+                "Georgia On My Mind, Freedom in My Heart",
+                "Southern Grit, Warrior Spirit: Proud Georgia Veteran"
+            ],
+            "lifestyle_environments": [
+                "Southern live oak alley draped in Spanish moss",
+                "Suburban brick ranch home driveway with pickup truck and American flag",
+                "Tactical shooting range in pine woods of central Georgia"
+            ],
+            "archetype_prompt": "Muscular infantry veteran with high-and-tight haircut, confident calm expression, rustic pine woods background"
+        }
+    },
+    {
+        "code": "HI",
+        "name": "Hawaii",
+        "nickname": "The Aloha State",
+        "motto": "Ua Mau ke Ea o ka 'Aina i ka Pono (The Life of the Land is Perpetuated in Righteousness)",
+        "capital": "Honolulu",
+        "region": "Pacific Islands",
+        "demographics": {
+            "population": 1440196,
+            "median_age": 39.8,
+            "gender": {"male": 50.1, "female": 49.9},
+            "race_ethnicity": {"white": 21.6, "black": 2.0, "hispanic": 10.8, "asian": 37.2, "native_american": 0.4, "other": 28.0},
+            "veteran_population": 108000,
+            "veteran_percentage": 9.4
+        },
+        "religion_values": {
+            "christian_pct": 63,
+            "evangelical_pct": 25,
+            "catholic_pct": 20,
+            "mainline_protestant_pct": 11,
+            "unaffiliated_pct": 26
+        },
+        "cultural_heritage": {
+            "symbols": ["Nene Goose", "Yellow Hibiscus", "Kukui Candlenut Tree", "Koa Wood", "Pearl Harbor Memorial", "Diamond Head"],
+            "state_bird": "Nene (Hawaiian Goose)",
+            "state_flower": "Yellow Hibiscus (Ma'o hau hele)",
+            "state_tree": "Kukui Tree",
+            "regional_vibe": "Aloha warrior spirit, Pacific naval citadel, profound Pearl Harbor remembrance, tropical lush beauty",
+            "military_ties": ["Joint Base Pearl Harbor-Hickam (USINDOPACOM)", "Schofield Barracks (25th Infantry Division 'Tropic Lightning')", "Marine Corps Base Hawaii (Kaneohe Bay)", "Camp H.M. Smith"],
+            "popular_slogans": [
+                "Remember Pearl Harbor: Pacific Warrior Hawaii Veteran",
+                "Tropic Lightning Tough: 25th Infantry Hawaii Strong",
+                "Aloha with Honor: Defender of the Pacific Islands"
+            ],
+            "lifestyle_environments": [
+                "Lush green volcanic ridge overlooking turquoise Oahu coastline",
+                "Open-air lanai with tropical palm garden and tradewinds",
+                "Historic Pearl Harbor waterfront memorial view"
+            ],
+            "archetype_prompt": "Island warrior veteran with warm determined look, Polynesian tribal forearm accent, lush green tropical backdrop"
+        }
+    },
+    {
+        "code": "ID",
+        "name": "Idaho",
+        "nickname": "The Gem State",
+        "motto": "Esto Perpetua (Let It Be Perpetual)",
+        "capital": "Boise",
+        "region": "Pacific Northwest / Mountain",
+        "demographics": {
+            "population": 1939033,
+            "median_age": 36.9,
+            "gender": {"male": 50.3, "female": 49.7},
+            "race_ethnicity": {"white": 81.2, "black": 0.9, "hispanic": 13.3, "asian": 1.6, "native_american": 1.4, "other": 1.6},
+            "veteran_population": 128000,
+            "veteran_percentage": 8.6
+        },
+        "religion_values": {
+            "christian_pct": 67,
+            "evangelical_pct": 21,
+            "catholic_pct": 10,
+            "mainline_protestant_pct": 11,
+            "unaffiliated_pct": 27
+        },
+        "cultural_heritage": {
+            "symbols": ["Mountain Bluebird", "Syringa", "Western White Pine", "Sawtooth Mountains", "Snake River", "Star Garnet"],
+            "state_bird": "Mountain Bluebird",
+            "state_flower": "Syringa (Mock Orange)",
+            "state_tree": "Western White Pine",
+            "regional_vibe": "Rugged alpine wilderness, pioneer self-reliance, pristine rivers, mountain hunting and shooting culture",
+            "military_ties": ["Mountain Home AFB (366th Fighter Wing 'Gunfighters')", "Gowen Field (Idaho National Guard)"],
+            "popular_slogans": [
+                "Gunfighter Skies, Idaho Ties: Mountain Home Veteran",
+                "Built for the Wilderness, Sworn to the Nation",
+                "Gem State Grit: Idaho Proud, Veteran Strong"
+            ],
+            "lifestyle_environments": [
+                "Rugged river valley with clear tumbling waters and granite boulders",
+                "Timber log cabin with firewood stack and hunting dogs",
+                "High mountain ridge overlooking endless evergreen forests"
+            ],
+            "archetype_prompt": "Hardy mountain outdoorsman with field jacket and beanie, crisp autumn riverbank setting with mountain pines"
+        }
+    },
+    {
+        "code": "IL",
+        "name": "Illinois",
+        "nickname": "The Prairie State",
+        "motto": "State Sovereignty, National Union",
+        "capital": "Springfield",
+        "region": "Midwest / Great Lakes",
+        "demographics": {
+            "population": 12582032,
+            "median_age": 38.6,
+            "gender": {"male": 49.1, "female": 50.9},
+            "race_ethnicity": {"white": 59.8, "black": 14.1, "hispanic": 17.8, "asian": 5.9, "native_american": 0.4, "other": 2.0},
+            "veteran_population": 574000,
+            "veteran_percentage": 5.8
+        },
+        "religion_values": {
+            "christian_pct": 71,
+            "evangelical_pct": 15,
+            "catholic_pct": 28,
+            "mainline_protestant_pct": 16,
+            "unaffiliated_pct": 22
+        },
+        "cultural_heritage": {
+            "symbols": ["Cardinal", "Violet", "White Oak", "Lincoln Silhouette", "Great Lakes Shipping", "Agricultural Cornfields"],
+            "state_bird": "Northern Cardinal",
+            "state_flower": "Violet",
+            "state_tree": "White Oak",
+            "regional_vibe": "Land of Lincoln, Naval recruit boot camp cradle, industrial Midwest manufacturing heart, rich agricultural plains",
+            "military_ties": ["Naval Station Great Lakes (Navy Recruit Training Command - The Quarterdeck of the Navy)", "Scott AFB (Air Mobility Command & US TRANSCOM)", "Rock Island Arsenal"],
+            "popular_slogans": [
+                "Boot Camp of the Navy: Great Lakes Sailor, Illinois Pride",
+                "Land of Lincoln, Home of Warriors: Illinois Veteran",
+                "State Sovereignty, National Union: Illinois Strong"
+            ],
+            "lifestyle_environments": [
+                "Midwest suburban brick home front porch with neat lawn",
+                "Great Lakes navy pier with steel ships and expansive blue water",
+                "Rustic farm barn workshop surrounded by golden corn fields"
+            ],
+            "archetype_prompt": "Determined naval recruit or veteran with athletic posture, clean Midwest suburban setting with porch flag"
+        }
+    },
+    {
+        "code": "IN",
+        "name": "Indiana",
+        "nickname": "The Hoosier State",
+        "motto": "The Crossroads of America",
+        "capital": "Indianapolis",
+        "region": "Midwest",
+        "demographics": {
+            "population": 6833037,
+            "median_age": 38.0,
+            "gender": {"male": 49.4, "female": 50.6},
+            "race_ethnicity": {"white": 77.2, "black": 9.9, "hispanic": 7.7, "asian": 2.6, "native_american": 0.4, "other": 2.2},
+            "veteran_population": 388000,
+            "veteran_percentage": 7.4
+        },
+        "religion_values": {
+            "christian_pct": 72,
+            "evangelical_pct": 31,
+            "catholic_pct": 18,
+            "mainline_protestant_pct": 16,
+            "unaffiliated_pct": 26
+        },
+        "cultural_heritage": {
+            "symbols": ["Cardinal", "Peony", "Tulip Tree", "Indy Racing Flag", "Torch and Stars State Flag", "Covered Bridges"],
+            "state_bird": "Northern Cardinal",
+            "state_flower": "Peony",
+            "state_tree": "Tulip Tree (Yellow Poplar)",
+            "regional_vibe": "Heartland work ethic, basketball folklore, naval warfare engineering, crossroads logistics power",
+            "military_ties": ["Crane Naval Surface Warfare Center (3rd largest naval installation)", "Camp Atterbury Joint Maneuver Training Center", "Grissom Air Reserve Base"],
+            "popular_slogans": [
+                "Crossroads of America, Backbone of Freedom: Hoosier Veteran",
+                "Indiana Born, Military Trained: Heartland Strong",
+                "Built on Faith, Steel, and Honor: Proud Indiana Defender"
+            ],
+            "lifestyle_environments": [
+                "Heartland workshop with vintage automotive tools and flag banner",
+                "Classic red brick farmhouse with lush green yard",
+                "Tailgate gathering before high school or college football game"
+            ],
+            "archetype_prompt": "Friendly, square-jawed Midwestern veteran with work jacket and jeans, warm sunlit workshop background"
+        }
+    },
+    {
+        "code": "IA",
+        "name": "Iowa",
+        "nickname": "The Hawkeye State",
+        "motto": "Our Liberties We Prize and Our Rights We Will Maintain",
+        "capital": "Des Moines",
+        "region": "Midwest / Great Plains",
+        "demographics": {
+            "population": 3200517,
+            "median_age": 38.5,
+            "gender": {"male": 49.7, "female": 50.3},
+            "race_ethnicity": {"white": 84.1, "black": 4.1, "hispanic": 6.8, "asian": 2.7, "native_american": 0.4, "other": 1.9},
+            "veteran_population": 182000,
+            "veteran_percentage": 7.3
+        },
+        "religion_values": {
+            "christian_pct": 77,
+            "evangelical_pct": 28,
+            "catholic_pct": 18,
+            "mainline_protestant_pct": 24,
+            "unaffiliated_pct": 21
+        },
+        "cultural_heritage": {
+            "symbols": ["Eastern Goldfinch", "Wild Prairie Rose", "Bur Oak", "Corn Silos", "Iowa Hawkeye"],
+            "state_bird": "Eastern Goldfinch",
+            "state_flower": "Wild Prairie Rose",
+            "state_tree": "Bur Oak",
+            "regional_vibe": "Agricultural bounty, bedrock integrity, quiet humility, steadfast commitment to community and country",
+            "military_ties": ["Camp Dodge (Iowa National Guard HQ)", "Des Moines Air National Guard Base (132d Wing)"],
+            "popular_slogans": [
+                "Our Liberties We Prize: Iowa Veteran",
+                "Grown in the Heartland, Tested in Service: Hawkeye Pride",
+                "From the Cornfields to the Frontlines: Iowa Strong"
+            ],
+            "lifestyle_environments": [
+                "Endless rolling green cornfields under open blue skies",
+                "Front lawn of classic white siding farmhouse",
+                "Community county fair or veteran memorial park"
+            ],
+            "archetype_prompt": "Humble and strong Iowa farmer veteran in casual chambray shirt, golden afternoon sunlight across cornfield backdrop"
+        }
+    },
+    {
+        "code": "KS",
+        "name": "Kansas",
+        "nickname": "The Sunflower State",
+        "motto": "Ad Astra per Aspera (To the Stars Through Difficulties)",
+        "capital": "Topeka",
+        "region": "Great Plains",
+        "demographics": {
+            "population": 2937150,
+            "median_age": 37.2,
+            "gender": {"male": 49.8, "female": 50.2},
+            "race_ethnicity": {"white": 74.4, "black": 5.7, "hispanic": 12.8, "asian": 3.2, "native_american": 1.0, "other": 2.9},
+            "veteran_population": 187000,
+            "veteran_percentage": 8.4
+        },
+        "religion_values": {
+            "christian_pct": 76,
+            "evangelical_pct": 31,
+            "catholic_pct": 18,
+            "mainline_protestant_pct": 24,
+            "unaffiliated_pct": 20
+        },
+        "cultural_heritage": {
+            "symbols": ["Western Meadowlark", "Wild Native Sunflower", "Cottonwood Tree", "Wheat Sheaf", "Buffalo"],
+            "state_bird": "Western Meadowlark",
+            "state_flower": "Wild Sunflower",
+            "state_tree": "Cottonwood",
+            "regional_vibe": "The Big Red One heritage, endless golden wheat seas, frontier cavalry spirit, aviation capital Wichita",
+            "military_ties": ["Fort Riley (1st Infantry Division - The Big Red One)", "Fort Leavenworth (Army Command & General Staff College)", "McConnell AFB (KC-46 Tanker Hub)"],
+            "popular_slogans": [
+                "The Big Red One: Kansas Cavalry Tough",
+                "To the Stars Through Difficulties: Kansas Veteran Pride",
+                "Breadbasket of America, Shield of Liberty: Kansas Strong"
+            ],
+            "lifestyle_environments": [
+                "Golden wheat field stretching to the horizon under vast prairie clouds",
+                "Rustic limestone farmhouse porch",
+                "Military aviation hangar or runway tarmac"
+            ],
+            "archetype_prompt": "First Infantry Division veteran with disciplined demeanor, canvas work jacket, boundless golden wheat field background"
+        }
+    },
+    {
+        "code": "KY",
+        "name": "Kentucky",
+        "nickname": "The Bluegrass State",
+        "motto": "United We Stand, Divided We Fall",
+        "capital": "Frankfort",
+        "region": "Upper South / Appalachia",
+        "demographics": {
+            "population": 4512310,
+            "median_age": 39.2,
+            "gender": {"male": 49.2, "female": 50.8},
+            "race_ethnicity": {"white": 83.2, "black": 8.0, "hispanic": 4.3, "asian": 1.7, "native_american": 0.3, "other": 2.5},
+            "veteran_population": 286000,
+            "veteran_percentage": 8.0
+        },
+        "religion_values": {
+            "christian_pct": 76,
+            "evangelical_pct": 49,
+            "catholic_pct": 10,
+            "mainline_protestant_pct": 11,
+            "unaffiliated_pct": 22
+        },
+        "cultural_heritage": {
+            "symbols": ["Kentucky Cardinal", "Goldenrod", "Tulip Poplar", "Thoroughbred Horse", "Bourbon Barrel", "Fort Knox Vault"],
+            "state_bird": "Northern Cardinal",
+            "state_flower": "Goldenrod",
+            "state_tree": "Tulip Poplar",
+            "regional_vibe": "Screaming Eagles airborne legends, Fort Knox armor bastion, rolling bluegrass thoroughbred pastures, bourbon heritage",
+            "military_ties": ["Fort Campbell (101st Airborne Division 'Screaming Eagles' & 160th SOAR 'Night Stalkers')", "Fort Knox (Army Human Resources Command & Cadet Command)", "Blue Grass Army Depot"],
+            "popular_slogans": [
+                "Night Stalkers Don't Quit: Screaming Eagles Kentucky Veteran",
+                "United We Stand: Fort Campbell Airborne Strong",
+                "Bluegrass Blood, Iron Will: Proud Kentucky Defender"
+            ],
+            "lifestyle_environments": [
+                "Rolling bluegrass horse farm with white wooden rail fencing",
+                "Rustic log cabin smokehouse in misty Appalachian foothills",
+                "Helicopter flight line at dusk with Black Hawk silhouettes"
+            ],
+            "archetype_prompt": "Airborne veteran wearing aviation sunglasses and military-spec olive henley, picturesque bluegrass horse ranch backdrop"
+        }
+    },
+    {
+        "code": "LA",
+        "name": "Louisiana",
+        "nickname": "The Pelican State",
+        "motto": "Union, Justice, and Confidence",
+        "capital": "Baton Rouge",
+        "region": "Deep South / Gulf Coast",
+        "demographics": {
+            "population": 4590241,
+            "median_age": 37.8,
+            "gender": {"male": 48.7, "female": 51.3},
+            "race_ethnicity": {"white": 57.5, "black": 32.2, "hispanic": 6.0, "asian": 1.8, "native_american": 0.7, "other": 1.8},
+            "veteran_population": 268000,
+            "veteran_percentage": 7.4
+        },
+        "religion_values": {
+            "christian_pct": 84,
+            "evangelical_pct": 27,
+            "catholic_pct": 26,
+            "mainline_protestant_pct": 8,
+            "unaffiliated_pct": 13
+        },
+        "cultural_heritage": {
+            "symbols": ["Brown Pelican", "Magnolia", "Bald Cypress", "Fleur-de-lis", "Bayou Spanish Moss", "Crawfish", "B-52 Stratofortress"],
+            "state_bird": "Brown Pelican",
+            "state_flower": "Magnolia",
+            "state_tree": "Bald Cypress",
+            "regional_vibe": "Bayou perseverance, Cajun and Creole soul, strategic nuclear strike bomber command, Joint Readiness Training",
+            "military_ties": ["Barksdale AFB (Air Force Global Strike Command & B-52 Bombers)", "Fort Johnson (formerly Fort Polk - Joint Readiness Training Center)", "Naval Air Station Joint Reserve Base New Orleans"],
+            "popular_slogans": [
+                "Global Strike Command: Barksdale B-52 Louisiana Pride",
+                "Bayou Born, Battle Tested: Louisiana Veteran Strong",
+                "Faith, Freedom & Fleur-de-lis: Louisiana Defenders"
+            ],
+            "lifestyle_environments": [
+                "Cypress bayou with Spanish moss draped over murky tranquil waters",
+                "Creole cottage porch with wrought-iron railing and hanging ferns",
+                "Barksdale AFB airshow apron with massive B-52 wing overhead"
+            ],
+            "archetype_prompt": "Warmhearted Cajun veteran with rugged salt-and-pepper beard, relaxed smile, misty cypress bayou background"
+        }
+    },
+    {
+        "code": "ME",
+        "name": "Maine",
+        "nickname": "The Pine Tree State",
+        "motto": "Dirigo (I Lead)",
+        "capital": "Augusta",
+        "region": "New England",
+        "demographics": {
+            "population": 1385340,
+            "median_age": 45.1,
+            "gender": {"male": 49.0, "female": 51.0},
+            "race_ethnicity": {"white": 92.4, "black": 1.6, "hispanic": 2.1, "asian": 1.3, "native_american": 0.7, "other": 1.9},
+            "veteran_population": 112000,
+            "veteran_percentage": 10.1
+        },
+        "religion_values": {
+            "christian_pct": 60,
+            "evangelical_pct": 14,
+            "catholic_pct": 21,
+            "mainline_protestant_pct": 21,
+            "unaffiliated_pct": 31
+        },
+        "cultural_heritage": {
+            "symbols": ["Black-capped Chickadee", "White Pine Cone and Tassel", "Eastern White Pine", "Lobster", "Granite Lighthouses", "20th Maine Joshua Chamberlain"],
+            "state_bird": "Black-capped Chickadee",
+            "state_flower": "White Pine Cone and Tassel",
+            "state_tree": "Eastern White Pine",
+            "regional_vibe": "Rugged rocky Atlantic coastline, legendary 20th Maine Little Round Top valor, shipbuilding excellence, quiet fortitude",
+            "military_ties": ["Portsmouth Naval Shipyard (Kittery)", "Bath Iron Works (Arleigh Burke DDG destroyers)", "101st Air Refueling Wing 'MAINEiacs' (Bangor)"],
+            "popular_slogans": [
+                "Bayonets! 20th Maine Valor: Little Round Top Heritage",
+                "Dirigo: I Lead with Maine Honor and Grit",
+                "Built by Bath Iron, Defended by Maine Veterans"
+            ],
+            "lifestyle_environments": [
+                "Rocky coastal granite headland with crashing Atlantic waves and white lighthouse",
+                "Dense pine forest cabin with stack of hardwood birch logs",
+                "Lobster boat wharf on foggy dawn harbor"
+            ],
+            "archetype_prompt": "Seasoned maritime veteran in thick navy wool knit and beanie, standing before a rocky Maine lighthouse headland"
+        }
+    },
+    {
+        "code": "MD",
+        "name": "Maryland",
+        "nickname": "The Old Line State",
+        "motto": "Fatti maschii, parole femine (Strong Deeds, Gentle Words)",
+        "capital": "Annapolis",
+        "region": "Mid-Atlantic / Chesapeake",
+        "demographics": {
+            "population": 6164660,
+            "median_age": 39.3,
+            "gender": {"male": 48.4, "female": 51.6},
+            "race_ethnicity": {"white": 48.7, "black": 31.1, "hispanic": 11.2, "asian": 6.9, "native_american": 0.4, "other": 1.7},
+            "veteran_population": 358000,
+            "veteran_percentage": 7.3
+        },
+        "religion_values": {
+            "christian_pct": 69,
+            "evangelical_pct": 18,
+            "catholic_pct": 15,
+            "mainline_protestant_pct": 18,
+            "unaffiliated_pct": 23
+        },
+        "cultural_heritage": {
+            "symbols": ["Baltimore Oriole", "Black-Eyed Susan", "White Oak", "Calvert & Crossland Coat of Arms Flag", "Blue Crab", "Chesapeake Deadrise"],
+            "state_bird": "Baltimore Oriole",
+            "state_flower": "Black-Eyed Susan",
+            "state_tree": "White Oak",
+            "regional_vibe": "Cradle of the Star-Spangled Banner (Fort McHenry), Naval Academy tradition, Chesapeake maritime heritage, elite defense research",
+            "military_ties": ["US Naval Academy (Annapolis)", "Fort Meade (NSA & US Cyber Command)", "Aberdeen Proving Ground", "Joint Base Andrews (Air Force One)", "Walter Reed Military Medical Center"],
+            "popular_slogans": [
+                "By Dawn's Early Light: Fort McHenry Maryland Veteran",
+                "Go Navy! Beat Army: Annapolis Pride & Precision",
+                "The Old Line: Resolute Deeds, Everlasting Honor"
+            ],
+            "lifestyle_environments": [
+                "Chesapeake Bay waterfront with historic Annapolis sailing vessels",
+                "Brick colonial townhome street near the Naval Academy",
+                "Suburban leafy courtyard with bold Maryland flag display"
+            ],
+            "archetype_prompt": "Sharp naval officer or cybersecurity veteran in crisp navy polo, standing by scenic Annapolis harbor"
+        }
+    },
+    {
+        "code": "MA",
+        "name": "Massachusetts",
+        "nickname": "The Bay State",
+        "motto": "Ense petit placidam sub libertate quietem (By the Sword We Seek Peace, but Peace Only Under Liberty)",
+        "capital": "Boston",
+        "region": "New England",
+        "demographics": {
+            "population": 6981974,
+            "median_age": 39.9,
+            "gender": {"male": 48.6, "female": 51.4},
+            "race_ethnicity": {"white": 68.6, "black": 9.0, "hispanic": 13.1, "asian": 7.4, "native_american": 0.3, "other": 1.6},
+            "veteran_population": 298000,
+            "veteran_percentage": 5.4
+        },
+        "religion_values": {
+            "christian_pct": 58,
+            "evangelical_pct": 9,
+            "catholic_pct": 34,
+            "mainline_protestant_pct": 11,
+            "unaffiliated_pct": 32
+        },
+        "cultural_heritage": {
+            "symbols": ["Black-capped Chickadee", "Mayflower", "American Elm", "Minuteman Statue", "USS Constitution 'Old Ironsides'", "Boston Harbor"],
+            "state_bird": "Black-capped Chickadee",
+            "state_flower": "Mayflower",
+            "state_tree": "American Elm",
+            "regional_vibe": "Birthplace of American liberty, Minuteman courage, Lexington & Concord, USS Old Ironsides heritage, world-class academia",
+            "military_ties": ["Hanscom AFB (Air Force Life Cycle Management Center)", "USS Constitution (Oldest commissioned naval vessel afloat, Charlestown)", "Natick Soldier Systems Center", "Barnes Air National Guard Base"],
+            "popular_slogans": [
+                "Stand Your Ground: Minuteman Pride, Massachusetts Veteran",
+                "Old Ironsides Resilient: Defending Liberty Since 1775",
+                "By the Sword We Seek Peace, Under Liberty Alone"
+            ],
+            "lifestyle_environments": [
+                "Historic cobblestone street in Beacon Hill or Charlestown Navy Yard",
+                "Lexington Green with bronze Minuteman statue silhouette",
+                "Cape Cod seaside dock on crisp autumn afternoon"
+            ],
+            "archetype_prompt": "Intellectual yet gritty New England veteran, charcoal sweater and dark tactical watch, historic brick and oak harbor background"
+        }
+    },
+    {
+        "code": "MI",
+        "name": "Michigan",
+        "nickname": "The Great Lakes State",
+        "motto": "Si quaeris peninsulam amoenam circumspice (If You Seek a Pleasant Peninsula, Look About You)",
+        "capital": "Lansing",
+        "region": "Midwest / Great Lakes",
+        "demographics": {
+            "population": 10034113,
+            "median_age": 40.2,
+            "gender": {"male": 49.2, "female": 50.8},
+            "race_ethnicity": {"white": 74.2, "black": 13.6, "hispanic": 5.6, "asian": 3.4, "native_american": 0.6, "other": 2.6},
+            "veteran_population": 542000,
+            "veteran_percentage": 6.8
+        },
+        "religion_values": {
+            "christian_pct": 70,
+            "evangelical_pct": 25,
+            "catholic_pct": 18,
+            "mainline_protestant_pct": 18,
+            "unaffiliated_pct": 24
+        },
+        "cultural_heritage": {
+            "symbols": ["Robin", "Apple Blossom", "Eastern White Pine", "Mackinac Bridge", "Motor City V8", "Two Peninsulas", "Lake Superior Agate"],
+            "state_bird": "American Robin",
+            "state_flower": "Apple Blossom",
+            "state_tree": "Eastern White Pine",
+            "regional_vibe": "Arsenal of Democracy, Motor City automotive muscle, Upper Peninsula wild forests, freshwater Great Lakes pride",
+            "military_ties": ["Selfridge Air National Guard Base (Harrison Twp)", "Camp Grayling Joint Maneuver Training Center", "Detroit Arsenal (Army Ground Vehicle Systems Center)"],
+            "popular_slogans": [
+                "Arsenal of Democracy: Michigan Automotive Muscle & Veteran Steel",
+                "Pure Michigan, Pure Grit: Tested on Two Peninsulas",
+                "Motor City Tough, Great Lakes Proud: Michigan Defender"
+            ],
+            "lifestyle_environments": [
+                "Great Lakes rocky shoreline with Mackinac Bridge in far distance",
+                "Industrial brick automotive garage with classic muscle car",
+                "Upper Peninsula pine logging trail in autumn colors"
+            ],
+            "archetype_prompt": "Hands-on auto craftsman veteran in charcoal work shirt and rugged denim, industrial workshop setting"
+        }
+    },
+    {
+        "code": "MN",
+        "name": "Minnesota",
+        "nickname": "The North Star State",
+        "motto": "L'Etoile du Nord (The Star of the North)",
+        "capital": "Saint Paul",
+        "region": "Upper Midwest",
+        "demographics": {
+            "population": 5717184,
+            "median_age": 38.5,
+            "gender": {"male": 49.7, "female": 50.3},
+            "race_ethnicity": {"white": 78.5, "black": 7.4, "hispanic": 6.0, "asian": 5.5, "native_american": 1.1, "other": 1.5},
+            "veteran_population": 302000,
+            "veteran_percentage": 6.7
+        },
+        "religion_values": {
+            "christian_pct": 74,
+            "evangelical_pct": 19,
+            "catholic_pct": 22,
+            "mainline_protestant_pct": 29,
+            "unaffiliated_pct": 20
+        },
+        "cultural_heritage": {
+            "symbols": ["Common Loon", "Pink and White Lady's Slipper", "Red Pine", "10,000 Lakes", "1st Minnesota Infantry Gettysburg Charge"],
+            "state_bird": "Common Loon",
+            "state_flower": "Showy Lady's Slipper",
+            "state_tree": "Red Pine (Norway Pine)",
+            "regional_vibe": "North Star resilience, 1st Minnesota Gettysburg charge heroic valor, 10,000 lakes cabin culture, quiet winter endurance",
+            "military_ties": ["Camp Ripley Training Center", "Minneapolis-St. Paul Air Reserve Station (934th Airlift Wing)", "133rd Airlift Wing (Minnesota Air National Guard)"],
+            "popular_slogans": [
+                "1st Minnesota: 82% Valor, Gettysburg Immortality",
+                "Land of 10,000 Lakes, Shield of One Great Nation",
+                "North Star Tough: Enduring the Cold, Defending the Free"
+            ],
+            "lifestyle_environments": [
+                "Tranquil northwoods lake dock with wooden canoe and mist",
+                "Timber-framed cedar cabin porch with stone fire pit",
+                "Snowy pine trail with outdoor winter adventure gear"
+            ],
+            "archetype_prompt": "Athletic northwoods veteran in warm flannel jacket and beanie, serene lakeside dock at sunrise"
+        }
+    },
+    {
+        "code": "MS",
+        "name": "Mississippi",
+        "nickname": "The Magnolia State",
+        "motto": "Virtute et armis (By Valor and Arms)",
+        "capital": "Jackson",
+        "region": "Deep South",
+        "demographics": {
+            "population": 2940057,
+            "median_age": 38.0,
+            "gender": {"male": 48.3, "female": 51.7},
+            "race_ethnicity": {"white": 56.4, "black": 37.8, "hispanic": 3.6, "asian": 1.1, "native_american": 0.6, "other": 0.5},
+            "veteran_population": 182000,
+            "veteran_percentage": 7.9
+        },
+        "religion_values": {
+            "christian_pct": 87,
+            "evangelical_pct": 41,
+            "catholic_pct": 4,
+            "mainline_protestant_pct": 12,
+            "unaffiliated_pct": 11
+        },
+        "cultural_heritage": {
+            "symbols": ["Mockingbird", "Magnolia", "Southern Magnolia Tree", "Delta Blues Guitar", "Riverboats", "Ingalls Shipyard"],
+            "state_bird": "Mockingbird",
+            "state_flower": "Magnolia",
+            "state_tree": "Southern Magnolia",
+            "regional_vibe": "Cradle of the Blues, deep Delta hospitality, naval surface combatant construction, steadfast faith and courage",
+            "military_ties": ["Keesler AFB (Second Air Force technical training & Hurricane Hunters)", "Naval Construction Battalion Center Gulfport (Home of the Atlantic Seabees)", "Columbus AFB (Specialized Undergraduate Pilot Training)", "Camp Shelby Joint Forces Training Center"],
+            "popular_slogans": [
+                "Can Do! Gulfport Seabees, Mississippi Spirit",
+                "By Valor and Arms: Proud Mississippi Veteran",
+                "Southern Delta Faith, American Military Might"
+            ],
+            "lifestyle_environments": [
+                "Shaded southern porch with blooming magnolia trees and sweet tea",
+                "Gulfport naval construction yard with crane silhouettes",
+                "Mississippi riverfront bluff at golden dusk"
+            ],
+            "archetype_prompt": "Friendly, resilient Gulf Coast Seabee veteran in tan utility shirt, warm Southern porch setting"
+        }
+    },
+    {
+        "code": "MO",
+        "name": "Missouri",
+        "nickname": "The Show-Me State",
+        "motto": "Salus populi suprema lex esto (The Welfare of the People Shall Be the Supreme Law)",
+        "capital": "Jefferson City",
+        "region": "Midwest / Ozarks",
+        "demographics": {
+            "population": 6177957,
+            "median_age": 38.9,
+            "gender": {"male": 49.1, "female": 50.9},
+            "race_ethnicity": {"white": 78.4, "black": 11.6, "hispanic": 4.7, "asian": 2.3, "native_american": 0.5, "other": 2.5},
+            "veteran_population": 418000,
+            "veteran_percentage": 8.6
+        },
+        "religion_values": {
+            "christian_pct": 77,
+            "evangelical_pct": 36,
+            "catholic_pct": 16,
+            "mainline_protestant_pct": 16,
+            "unaffiliated_pct": 20
+        },
+        "cultural_heritage": {
+            "symbols": ["Eastern Bluebird", "White Hawthorn Blossom", "Flowering Dogwood", "Gateway Arch", "B-2 Spirit Stealth Bomber", "Ozark Hills"],
+            "state_bird": "Eastern Bluebird",
+            "state_flower": "White Hawthorn",
+            "state_tree": "Flowering Dogwood",
+            "regional_vibe": "Gateway to the West, B-2 stealth bomber home, Fort Leonard Wood combat engineer backbone, straightforward 'Show-Me' resolve",
+            "military_ties": ["Whiteman AFB (509th Bomb Wing - Sole operational base for B-2 Spirit Stealth Bomber)", "Fort Leonard Wood (Maneuver Support Center of Excellence: Engineers, CBRN, MP)", "Rosecrans Air National Guard Base"],
+            "popular_slogans": [
+                "Show Me the Fight: Whiteman B-2 Stealth Veteran",
+                "Essayons! Let Us Try: Fort Leonard Wood Engineer Strong",
+                "Gateway to the West, Guardian of the Free: Missouri Pride"
+            ],
+            "lifestyle_environments": [
+                "Rolling Ozark foothills with autumn oak and dogwood trees",
+                "Whiteman AFB tarmac with dramatic stealth bomber shape",
+                "Suburban Kansas City / St. Louis deck with barbecue grill"
+            ],
+            "archetype_prompt": "No-nonsense, confident Midwestern engineer veteran, dark denim and henley, Ozark forest backdrop"
+        }
+    },
+    {
+        "code": "MT",
+        "name": "Montana",
+        "nickname": "The Treasure State / Big Sky Country",
+        "motto": "Oro y Plata (Gold and Silver)",
+        "capital": "Helena",
+        "region": "Mountain West",
+        "demographics": {
+            "population": 1122867,
+            "median_age": 40.1,
+            "gender": {"male": 50.6, "female": 49.4},
+            "race_ethnicity": {"white": 85.8, "black": 0.6, "hispanic": 4.4, "asian": 0.9, "native_american": 6.4, "other": 1.9},
+            "veteran_population": 91000,
+            "veteran_percentage": 10.2
+        },
+        "religion_values": {
+            "christian_pct": 65,
+            "evangelical_pct": 28,
+            "catholic_pct": 17,
+            "mainline_protestant_pct": 16,
+            "unaffiliated_pct": 30
+        },
+        "cultural_heritage": {
+            "symbols": ["Western Meadowlark", "Bitterroot", "Ponderosa Pine", "Grizzly Bear", "Big Sky Mountains", "Minuteman III ICBM Silos"],
+            "state_bird": "Western Meadowlark",
+            "state_flower": "Bitterroot",
+            "state_tree": "Ponderosa Pine",
+            "regional_vibe": "Endless Big Sky horizons, nuclear missile defense shield, cowboy ranching independence, untamed wilderness grit",
+            "military_ties": ["Malmstrom AFB (341st Missile Wing - Minuteman III ICBM strategic nuclear deterrence)", "Montana Air National Guard (120th Airlift Wing)"],
+            "popular_slogans": [
+                "Under the Big Sky, We Stand Guard: Malmstrom Veteran",
+                "Montana Born, Mountain Tested, Ready for Anything",
+                "Untamed Wilderness, Unbroken Loyalty: Montana Pride"
+            ],
+            "lifestyle_environments": [
+                "Vast high plains ranch with snowcapped Rockies in the background",
+                "Log cabin porch with weathered wood and hunting trophy mounts",
+                "Clear trout stream meandering through open big sky valley"
+            ],
+            "archetype_prompt": "Weathered, rugged Montana rancher veteran with cowboy hat and heavy wool vest, sweeping mountain sky backdrop"
+        }
+    },
+    {
+        "code": "NE",
+        "name": "Nebraska",
+        "nickname": "The Cornhusker State",
+        "motto": "Equality Before the Law",
+        "capital": "Lincoln",
+        "region": "Great Plains",
+        "demographics": {
+            "population": 1967923,
+            "median_age": 36.9,
+            "gender": {"male": 49.9, "female": 50.1},
+            "race_ethnicity": {"white": 77.0, "black": 4.9, "hispanic": 12.0, "asian": 2.7, "native_american": 0.9, "other": 2.5},
+            "veteran_population": 124000,
+            "veteran_percentage": 8.1
+        },
+        "religion_values": {
+            "christian_pct": 75,
+            "evangelical_pct": 25,
+            "catholic_pct": 23,
+            "mainline_protestant_pct": 24,
+            "unaffiliated_pct": 20
+        },
+        "cultural_heritage": {
+            "symbols": ["Western Meadowlark", "Goldenrod", "Cottonwood", "Cornhusker", "Chimney Rock", "Sandhills"],
+            "state_bird": "Western Meadowlark",
+            "state_flower": "Goldenrod",
+            "state_tree": "Cottonwood",
+            "regional_vibe": "US Strategic Command nerve center, vast prairie sandhills, relentless agricultural work ethic, Cornhusker loyalty",
+            "military_ties": ["Offutt AFB (US Strategic Command - USSTRATCOM HQ & 55th Wing RC-135 reconnaissance)"],
+            "popular_slogans": [
+                "Peace is Our Profession: USSTRATCOM Offutt Veteran",
+                "Cornhusker Grit, American Pride: Nebraska Strong",
+                "Equality Before the Law, Honor Above All"
+            ],
+            "lifestyle_environments": [
+                "Pristine Nebraska sandhills cattle ranch under expansive sky",
+                "Suburban Omaha back patio with American flag flying high",
+                "Command intelligence console or flightline hangar"
+            ],
+            "archetype_prompt": "Disciplined Air Force intelligence veteran in clean tactical apparel, open prairie plains background"
+        }
+    },
+    {
+        "code": "NV",
+        "name": "Nevada",
+        "nickname": "The Silver State / Battle Born",
+        "motto": "All for Our Country",
+        "capital": "Carson City",
+        "region": "Mountain West / Great Basin",
+        "demographics": {
+            "population": 3177772,
+            "median_age": 38.3,
+            "gender": {"male": 50.4, "female": 49.6},
+            "race_ethnicity": {"white": 46.2, "black": 9.8, "hispanic": 30.3, "asian": 8.7, "native_american": 1.1, "other": 3.9},
+            "veteran_population": 218000,
+            "veteran_percentage": 8.8
+        },
+        "religion_values": {
+            "christian_pct": 66,
+            "evangelical_pct": 20,
+            "catholic_pct": 25,
+            "mainline_protestant_pct": 11,
+            "unaffiliated_pct": 28
+        },
+        "cultural_heritage": {
+            "symbols": ["Mountain Bluebird", "Sagebrush", "Single-Leaf Pinyon", "Desert Bighorn Sheep", "Silver Ore", "Battle Born Banner"],
+            "state_bird": "Mountain Bluebird",
+            "state_flower": "Sagebrush",
+            "state_tree": "Single-Leaf Pinyon",
+            "regional_vibe": "Battle Born statehood (admitted during Civil War), premier Topgun & Red Flag fighter pilot capital, silver mining tenacity",
+            "military_ties": ["Nellis AFB (USAF Warfare Center, Thunderbirds & Red Flag exercises)", "Creech AFB (Remotely Piloted Aircraft Hub)", "Naval Air Station Fallon (TOPGUN Naval Strike & Air Warfare Center)", "Hawthorne Army Depot"],
+            "popular_slogans": [
+                "Battle Born, Topgun Bred: Nevada Aviation Veteran",
+                "All for Our Country: Nevada Silver State Pride",
+                "Red Flag Skies, American Shield: Nevada Strong"
+            ],
+            "lifestyle_environments": [
+                "High desert valley with sagebrush and jagged purple mountain ridges",
+                "Nellis AFB tarmac with Thunderbird F-16 vapor trails in sky",
+                "Suburban Las Vegas or Reno courtyard under warm desert stars"
+            ],
+            "archetype_prompt": "Fighter jet pilot veteran with aviators and flight jacket patches, dramatic desert mountain airbase backdrop"
+        }
+    },
+    {
+        "code": "NH",
+        "name": "New Hampshire",
+        "nickname": "The Granite State",
+        "motto": "Live Free or Die",
+        "capital": "Concord",
+        "region": "New England",
+        "demographics": {
+            "population": 1395231,
+            "median_age": 43.1,
+            "gender": {"male": 49.6, "female": 50.4},
+            "race_ethnicity": {"white": 88.5, "black": 1.8, "hispanic": 4.4, "asian": 3.0, "native_american": 0.3, "other": 2.0},
+            "veteran_population": 98000,
+            "veteran_percentage": 8.8
+        },
+        "religion_values": {
+            "christian_pct": 59,
+            "evangelical_pct": 13,
+            "catholic_pct": 26,
+            "mainline_protestant_pct": 16,
+            "unaffiliated_pct": 36
+        },
+        "cultural_heritage": {
+            "symbols": ["Purple Finch", "Purple Lilac", "White Birch", "Old Man of the Mountain", "Granite Cliffs", "Mount Washington"],
+            "state_bird": "Purple Finch",
+            "state_flower": "Purple Lilac",
+            "state_tree": "White Birch",
+            "regional_vibe": "Ultimate freedom ethos ('Live Free or Die'), granite bedrock grit, fierce colonial independence, White Mountain majesty",
+            "military_ties": ["Pease Air National Guard Base (157th Air Refueling Wing KC-46 Pegasus)", "Portsmouth Naval Shipyard border presence"],
+            "popular_slogans": [
+                "Live Free or Die: Death is Not the Worst of Evils",
+                "Granite State Backbone: New Hampshire Veteran",
+                "Carved in Granite, Forged in Freedom: NH Strong"
+            ],
+            "lifestyle_environments": [
+                "White Mountain granite overlook with autumn foliage blanket",
+                "Historic New England village green with stone tavern and flags",
+                "Woodstove-warmed cabin workshop with axe and gun rack"
+            ],
+            "archetype_prompt": "Rugged, self-reliant New Englander veteran with heavy flannel and boots, granite mountain scenic backdrop"
+        }
+    },
+    {
+        "code": "NJ",
+        "name": "New Jersey",
+        "nickname": "The Garden State",
+        "motto": "Liberty and Prosperity",
+        "capital": "Trenton",
+        "region": "Mid-Atlantic",
+        "demographics": {
+            "population": 9261694,
+            "median_age": 40.3,
+            "gender": {"male": 48.9, "female": 51.1},
+            "race_ethnicity": {"white": 53.6, "black": 13.5, "hispanic": 21.6, "asian": 10.2, "native_american": 0.3, "other": 0.8},
+            "veteran_population": 312000,
+            "veteran_percentage": 4.3
+        },
+        "religion_values": {
+            "christian_pct": 67,
+            "evangelical_pct": 13,
+            "catholic_pct": 34,
+            "mainline_protestant_pct": 12,
+            "unaffiliated_pct": 18
+        },
+        "cultural_heritage": {
+            "symbols": ["Eastern Goldfinch", "Common Violet", "Northern Red Oak", "Crossroads of the Revolution", "Jersey Shore Boardwalks", "Pine Barrens"],
+            "state_bird": "Eastern Goldfinch",
+            "state_flower": "Common Meadow Violet",
+            "state_tree": "Northern Red Oak",
+            "regional_vibe": "Crossroads of the American Revolution (Washington Crossing the Delaware, Trenton, Monmouth), tri-service Joint Base pride",
+            "military_ties": ["Joint Base McGuire-Dix-Lakehurst (Only tri-service DoD joint installation)", "Picatinny Arsenal (Army Joint Center of Excellence for Armaments & Munitions)", "Coast Guard Training Center Cape May (Enlisted boot camp)"],
+            "popular_slogans": [
+                "Crossroads of the American Revolution: New Jersey Veteran",
+                "Tri-Service Power: McGuire-Dix-Lakehurst Strong",
+                "Liberty and Prosperity: Jersey Born, Nation Defended"
+            ],
+            "lifestyle_environments": [
+                "Delaware River historic crossing point with colonial stone monuments",
+                "Jersey shore beach boardwalk in crisp autumn breeze",
+                "Suburban neighborhood porch decorated with patriotic bunting"
+            ],
+            "archetype_prompt": "Tough, loyal East Coast veteran in bomber jacket and dark jeans, colonial brick monument background"
+        }
+    },
+    {
+        "code": "NM",
+        "name": "New Mexico",
+        "nickname": "Land of Enchantment",
+        "motto": "Crescit eundo (It Grows As It Goes)",
+        "capital": "Santa Fe",
+        "region": "Southwest",
+        "demographics": {
+            "population": 2113344,
+            "median_age": 38.5,
+            "gender": {"male": 49.5, "female": 50.5},
+            "race_ethnicity": {"white": 36.1, "black": 2.2, "hispanic": 50.1, "asian": 1.7, "native_american": 9.1, "other": 0.8},
+            "veteran_population": 146000,
+            "veteran_percentage": 8.9
+        },
+        "religion_values": {
+            "christian_pct": 75,
+            "evangelical_pct": 23,
+            "catholic_pct": 34,
+            "mainline_protestant_pct": 14,
+            "unaffiliated_pct": 21
+        },
+        "cultural_heritage": {
+            "symbols": ["Roadrunner", "Yucca Flower", "Piñon Pine", "Zia Sun Symbol", "White Sands", "Chili Peppers", "Bataan Memorial"],
+            "state_bird": "Greater Roadrunner",
+            "state_flower": "Yucca Flower",
+            "state_tree": "Piñon Pine",
+            "regional_vibe": "Sacred Zia sun heritage, Bataan Death March courage (200th Coast Artillery), White Sands missile testing, nuclear science birthplace",
+            "military_ties": ["Kirtland AFB (Air Force Global Strike Command & Nuclear Weapons Center)", "Holloman AFB (F-16 & MQ-9 Reaper Training)", "Cannon AFB (Air Force Special Operations Command)", "White Sands Missile Range"],
+            "popular_slogans": [
+                "Remember Bataan: 200th Coast Artillery New Mexico Valor",
+                "Sacred Zia Honor: Land of Enchantment Veteran",
+                "Special Ops Skies, White Sands Steel: NM Proud"
+            ],
+            "lifestyle_environments": [
+                "Glistening White Sands gypsum dunes with deep blue sky",
+                "Pueblo revival adobe patio with ristra chili garlands and fire bowl",
+                "High desert pine mesa overlooking desert horizon"
+            ],
+            "archetype_prompt": "Hispanic-American Special Forces veteran with calm intensity, Zia emblem detail, radiant adobe desert sunset backdrop"
+        }
+    },
+    {
+        "code": "NY",
+        "name": "New York",
+        "nickname": "The Empire State",
+        "motto": "Excelsior (Ever Upward)",
+        "capital": "Albany",
+        "region": "Northeast / Mid-Atlantic",
+        "demographics": {
+            "population": 19677151,
+            "median_age": 39.4,
+            "gender": {"male": 48.6, "female": 51.4},
+            "race_ethnicity": {"white": 54.1, "black": 14.5, "hispanic": 19.5, "asian": 9.5, "native_american": 0.4, "other": 2.0},
+            "veteran_population": 692000,
+            "veteran_percentage": 4.4
+        },
+        "religion_values": {
+            "christian_pct": 60,
+            "evangelical_pct": 10,
+            "catholic_pct": 31,
+            "mainline_protestant_pct": 11,
+            "unaffiliated_pct": 27
+        },
+        "cultural_heritage": {
+            "symbols": ["Eastern Bluebird", "Rose", "Sugar Maple", "Statue of Liberty", "West Point Academy", "Empire State Building", "Adirondacks"],
+            "state_bird": "Eastern Bluebird",
+            "state_flower": "Rose",
+            "state_tree": "Sugar Maple",
+            "regional_vibe": "Cradle of Army leadership at West Point, 10th Mountain Division alpine warriors, Statue of Liberty freedom beacon, Adirondack grit",
+            "military_ties": ["US Military Academy at West Point", "Fort Drum (10th Mountain Division - Light Infantry)", "Stewart Air National Guard Base", "Niagara Falls Air Reserve Station"],
+            "popular_slogans": [
+                "Climb to Glory: 10th Mountain Division NY Veteran",
+                "Duty, Honor, Country: West Point Leadership NY Pride",
+                "Excelsior! Ever Upward in the Defense of Freedom"
+            ],
+            "lifestyle_environments": [
+                "Hudson River overlook at West Point with granite Gothic battlements",
+                "Snowy North Country fir tree trail near Fort Drum",
+                "New York harbor waterfront with distant Statue of Liberty"
+            ],
+            "archetype_prompt": "Disciplined 10th Mountain Division soldier in cold-weather tactical gear, rugged snow-dusted Adirondack mountain setting"
+        }
+    },
+    {
+        "code": "NC",
+        "name": "North Carolina",
+        "nickname": "The Tar Heel State / First in Flight",
+        "motto": "Esse quam videri (To Be, Rather Than to Seem)",
+        "capital": "Raleigh",
+        "region": "Southeast",
+        "demographics": {
+            "population": 10698973,
+            "median_age": 39.1,
+            "gender": {"male": 48.6, "female": 51.4},
+            "race_ethnicity": {"white": 61.9, "black": 21.0, "hispanic": 10.7, "asian": 3.4, "native_american": 1.2, "other": 1.8},
+            "veteran_population": 725000,
+            "veteran_percentage": 8.7
+        },
+        "religion_values": {
+            "christian_pct": 77,
+            "evangelical_pct": 35,
+            "catholic_pct": 9,
+            "mainline_protestant_pct": 14,
+            "unaffiliated_pct": 20
+        },
+        "cultural_heritage": {
+            "symbols": ["Northern Cardinal", "Dogwood", "Longleaf Pine", "Wright Flyer", "Cape Hatteras Lighthouse", "Blue Ridge Mountains"],
+            "state_bird": "Northern Cardinal",
+            "state_flower": "Flowering Dogwood",
+            "state_tree": "Longleaf Pine",
+            "regional_vibe": "Center of the Military Universe (Fort Liberty & Camp Lejeune), Special Forces Green Beret home, First in Flight innovation, coastal outer banks to Blue Ridge peaks",
+            "military_ties": ["Fort Liberty (formerly Fort Bragg - US Army Special Operations Command, 82nd Airborne Division)", "Camp Lejeune (II Marine Expeditionary Force)", "Seymour Johnson AFB (4th Fighter Wing)", "Marine Corps Air Station Cherry Point"],
+            "popular_slogans": [
+                "All the Way! 82nd Airborne Fort Liberty Veteran",
+                "De Oppresso Liber: Green Beret Home, North Carolina Strong",
+                "To Be Rather Than to Seem: True North Carolina Valor"
+            ],
+            "lifestyle_environments": [
+                "Blue Ridge Parkway scenic mountain overlook at sunrise",
+                "Outer Banks sand dunes with coastal sea oats and lighthouse",
+                "Pine needle covered clearing outside military cantonment"
+            ],
+            "archetype_prompt": "Airborne paratrooper veteran with maroon beret crest on hat, fit and focused, North Carolina pine forest background"
+        }
+    },
+    {
+        "code": "ND",
+        "name": "North Dakota",
+        "nickname": "The Peace Garden State / Roughrider State",
+        "motto": "Liberty and Union, Now and Forever, One and Inseparable",
+        "capital": "Bismarck",
+        "region": "Upper Midwest / Great Plains",
+        "demographics": {
+            "population": 779261,
+            "median_age": 35.4,
+            "gender": {"male": 51.2, "female": 48.8},
+            "race_ethnicity": {"white": 82.9, "black": 3.4, "hispanic": 4.5, "asian": 1.8, "native_american": 5.4, "other": 2.0},
+            "veteran_population": 52000,
+            "veteran_percentage": 8.8
+        },
+        "religion_values": {
+            "christian_pct": 77,
+            "evangelical_pct": 22,
+            "catholic_pct": 26,
+            "mainline_protestant_pct": 28,
+            "unaffiliated_pct": 20
+        },
+        "cultural_heritage": {
+            "symbols": ["Western Meadowlark", "Wild Prairie Rose", "American Elm", "Bison", "Badlands", "Theodore Roosevelt Roughrider", "B-52 & ICBMs"],
+            "state_bird": "Western Meadowlark",
+            "state_flower": "Wild Prairie Rose",
+            "state_tree": "American Elm",
+            "regional_vibe": "Nuclear triad vanguard (Minot AFB), Roughrider frontier determination, vast Badlands prairies, steadfast northern resilience",
+            "military_ties": ["Minot AFB (5th Bomb Wing B-52s & 91st Missile Wing ICBMs - 'Only Best Come North')", "Grand Forks AFB (319th Reconnaissance Wing Global Hawk)"],
+            "popular_slogans": [
+                "Only the Best Come North: Minot Nuclear Shield Veteran",
+                "Roughrider Spirit: North Dakota Badlands Tough",
+                "Liberty and Union, Inseparable and Unbroken"
+            ],
+            "lifestyle_environments": [
+                "Theodore Roosevelt National Park rugged badlands buttes",
+                "Sub-zero snowcovered prairie runway with B-52 exhaust plumes",
+                "Ranch fence line stretching endlessly under clear crystal blue sky"
+            ],
+            "archetype_prompt": "Cold-weather missileer or bomber crew veteran in fur-lined parka, vast snowy North Dakota plains background"
+        }
+    },
+    {
+        "code": "OH",
+        "name": "Ohio",
+        "nickname": "The Buckeye State",
+        "motto": "With God, All Things Are Possible",
+        "capital": "Columbus",
+        "region": "Midwest / Rust Belt",
+        "demographics": {
+            "population": 11756058,
+            "median_age": 39.5,
+            "gender": {"male": 49.0, "female": 51.0},
+            "race_ethnicity": {"white": 78.4, "black": 12.5, "hispanic": 4.4, "asian": 2.6, "native_american": 0.3, "other": 1.8},
+            "veteran_population": 718000,
+            "veteran_percentage": 7.8
+        },
+        "religion_values": {
+            "christian_pct": 73,
+            "evangelical_pct": 29,
+            "catholic_pct": 18,
+            "mainline_protestant_pct": 17,
+            "unaffiliated_pct": 22
+        },
+        "cultural_heritage": {
+            "symbols": ["Cardinal", "Scarlet Carnation", "Ohio Buckeye Tree", "Wright Brothers Flyer", "Steel Mills", "National Museum of the USAF"],
+            "state_bird": "Northern Cardinal",
+            "state_flower": "Scarlet Carnation",
+            "state_tree": "Ohio Buckeye",
+            "regional_vibe": "Birthplace of Aviation, Rust Belt industrial backbone, aerospace research engine (Wright-Patt), relentless blue-collar pride",
+            "military_ties": ["Wright-Patterson AFB (Air Force Materiel Command & National Museum of the USAF)", "Joint Systems Manufacturing Center Lima (Abrams Tank Plant)", "Mansfield Lahm Air National Guard Base", "Springfield-Beckley Municipal Airport"],
+            "popular_slogans": [
+                "Forged in Steel, Flying in Freedom: Wright-Patt Ohio Veteran",
+                "Abrams Armor Tough: Lima Tank Plant Ohio Pride",
+                "With God All Things Are Possible: Buckeye Veteran Strong"
+            ],
+            "lifestyle_environments": [
+                "Industrial heritage brick garage with vintage machine lathe",
+                "Suburban front porch with scarlet and gray accents and American flag",
+                "Aviation museum hangar with historic WWII and supersonic aircraft"
+            ],
+            "archetype_prompt": "Hardworking Midwestern mechanical engineer or tank crew veteran in rugged canvas vest, industrial workshop background"
+        }
+    },
+    {
+        "code": "OK",
+        "name": "Oklahoma",
+        "nickname": "The Sooner State",
+        "motto": "Labor Omnia Vincit (Work Conquers All)",
+        "capital": "Oklahoma City",
+        "region": "South Central / Plains",
+        "demographics": {
+            "population": 4019800,
+            "median_age": 36.8,
+            "gender": {"male": 49.5, "female": 50.5},
+            "race_ethnicity": {"white": 64.6, "black": 7.3, "hispanic": 11.9, "asian": 2.5, "native_american": 9.4, "other": 4.3},
+            "veteran_population": 296000,
+            "veteran_percentage": 9.3
+        },
+        "religion_values": {
+            "christian_pct": 79,
+            "evangelical_pct": 47,
+            "catholic_pct": 8,
+            "mainline_protestant_pct": 16,
+            "unaffiliated_pct": 18
+        },
+        "cultural_heritage": {
+            "symbols": ["Scissor-tailed Flycatcher", "Oklahoma Rose", "Redbud", "Osage Buffalo Skin Shield", "Oil Derricks", "Thunderbird Division"],
+            "state_bird": "Scissor-tailed Flycatcher",
+            "state_flower": "Oklahoma Rose",
+            "state_tree": "Redbud",
+            "regional_vibe": "King of Battle field artillery capital (Fort Sill), Sooner pioneer resilience, Native American sovereign tribal heritage, Tinker logistics giant",
+            "military_ties": ["Fort Sill (US Army Fires Center of Excellence - Field & Air Defense Artillery)", "Tinker AFB (Air Force Materiel Command & Oklahoma City Air Logistics Complex)", "Altus AFB (Mobility Training Hub)", "Vance AFB"],
+            "popular_slogans": [
+                "King of Battle! Fort Sill Artillery Veteran",
+                "45th Infantry Thunderbirds: Oklahoma Warrior Spirit",
+                "Labor Conquers All: Sooner State Strong, Faith-Bound"
+            ],
+            "lifestyle_environments": [
+                "Red dirt country plains with rolling hills and wind turbines",
+                "Artillery firing range with howitzers and dust clouds in distance",
+                "Western ranch house veranda with leather saddle and flag"
+            ],
+            "archetype_prompt": "Field artillery veteran with stoic proud expression, weathered tan skin, red dirt Oklahoma landscape backdrop"
+        }
+    },
+    {
+        "code": "OR",
+        "name": "Oregon",
+        "nickname": "The Beaver State",
+        "motto": "Alis volat propriis (She Flies With Her Own Wings)",
+        "capital": "Salem",
+        "region": "Pacific Northwest",
+        "demographics": {
+            "population": 4240137,
+            "median_age": 39.8,
+            "gender": {"male": 49.5, "female": 50.5},
+            "race_ethnicity": {"white": 74.0, "black": 2.0, "hispanic": 14.1, "asian": 4.8, "native_american": 1.4, "other": 3.7},
+            "veteran_population": 272000,
+            "veteran_percentage": 8.1
+        },
+        "religion_values": {
+            "christian_pct": 61,
+            "evangelical_pct": 29,
+            "catholic_pct": 14,
+            "mainline_protestant_pct": 13,
+            "unaffiliated_pct": 31
+        },
+        "cultural_heritage": {
+            "symbols": ["Western Meadowlark", "Oregon Grape", "Douglas Fir", "American Beaver", "Mount Hood", "Haystack Rock", "Crater Lake"],
+            "state_bird": "Western Meadowlark",
+            "state_flower": "Oregon Grape",
+            "state_tree": "Douglas Fir",
+            "regional_vibe": "Pacific Northwest timber independence, majestic Douglas fir forests, rugged coastlines, 41st Infantry Brigade combat heritage",
+            "military_ties": ["Kingsley Field Air National Guard Base (F-15 Eagle training)", "Portland Air National Guard Base (142nd Wing)", "Camp Rilea Armed Forces Training Center"],
+            "popular_slogans": [
+                "She Flies With Her Own Wings: Oregon Veteran Pride",
+                "Sunset Division: 41st Infantry Brigade Oregon Strong",
+                "Timber Country Tough, Pacific Guardian: Oregon Defenders"
+            ],
+            "lifestyle_environments": [
+                "Towering Douglas fir rainforest with filtered green sunlight",
+                "Pacific ocean coastal cliff overlooking stormy surf",
+                "Timber cabin wood shop with cedar scent and handmade tools"
+            ],
+            "archetype_prompt": "Pacific Northwest outdoorsman veteran in water-resistant olive jacket and boots, lush evergreen forest background"
+        }
+    },
+    {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "nickname": "The Keystone State",
+        "motto": "Virtue, Liberty, and Independence",
+        "capital": "Harrisburg",
+        "region": "Mid-Atlantic / Rust Belt",
+        "demographics": {
+            "population": 12972008,
+            "median_age": 40.8,
+            "gender": {"male": 49.0, "female": 51.0},
+            "race_ethnicity": {"white": 75.3, "black": 11.8, "hispanic": 8.3, "asian": 3.9, "native_american": 0.3, "other": 0.4},
+            "veteran_population": 768000,
+            "veteran_percentage": 7.4
+        },
+        "religion_values": {
+            "christian_pct": 73,
+            "evangelical_pct": 19,
+            "catholic_pct": 24,
+            "mainline_protestant_pct": 23,
+            "unaffiliated_pct": 21
+        },
+        "cultural_heritage": {
+            "symbols": ["Ruffed Grouse", "Mountain Laurel", "Eastern Hemlock", "Liberty Bell", "Keystone Symbol", "Gettysburg Battlefield", "Valley Forge"],
+            "state_bird": "Ruffed Grouse",
+            "state_flower": "Mountain Laurel",
+            "state_tree": "Eastern Hemlock",
+            "regional_vibe": "The Keystone of American Independence, Valley Forge winter endurance, Gettysburg turning point, 28th Infantry Iron Division, steel and coal backbone",
+            "military_ties": ["Army War College (Carlisle Barracks)", "Fort Indiantown Gap (National Guard training hub)", "Tobyhanna Army Depot", "Naval Support Activity Mechanicsburg", "Pittsburgh 911th Airlift Wing"],
+            "popular_slogans": [
+                "Iron Division! 28th Infantry Keystone Veteran",
+                "From Valley Forge to Gettysburg: Pennsylvania Valor",
+                "Virtue, Liberty, and Independence: Keystone State Steel"
+            ],
+            "lifestyle_environments": [
+                "Historic stone farmhouse with autumn maple trees in Bucks County",
+                "Gettysburg cannon line overlooking rolling green fields at dawn",
+                "Pittsburgh steel-bridge urban riverfront view"
+            ],
+            "archetype_prompt": "Resolute Pennsylvania veteran with thoughtful expression, wearing charcoal crewneck, historic stone wall and rolling fields backdrop"
+        }
+    },
+    {
+        "code": "RI",
+        "name": "Rhode Island",
+        "nickname": "The Ocean State",
+        "motto": "Hope",
+        "capital": "Providence",
+        "region": "New England",
+        "demographics": {
+            "population": 1093777,
+            "median_age": 40.1,
+            "gender": {"male": 48.7, "female": 51.3},
+            "race_ethnicity": {"white": 70.3, "black": 6.8, "hispanic": 16.6, "asian": 3.6, "native_american": 0.5, "other": 2.2},
+            "veteran_population": 58000,
+            "veteran_percentage": 6.6
+        },
+        "religion_values": {
+            "christian_pct": 75,
+            "evangelical_pct": 14,
+            "catholic_pct": 42,
+            "mainline_protestant_pct": 14,
+            "unaffiliated_pct": 20
+        },
+        "cultural_heritage": {
+            "symbols": ["Rhode Island Red", "Violet", "Red Maple", "Anchor of Hope", "Narragansett Bay", "Newport Mansions & Regattas"],
+            "state_bird": "Rhode Island Red",
+            "state_flower": "Common Meadow Violet",
+            "state_tree": "Red Maple",
+            "regional_vibe": "Naval War College intellect, Newport maritime sailing aristocracy, anchor of hope, coastal independence",
+            "military_ties": ["Naval Station Newport (Naval War College, Officer Candidate School, Surface Warfare Schools Command)", "Quonset Point Air National Guard Station"],
+            "popular_slogans": [
+                "Anchor of Hope: Newport Naval Veteran",
+                "Small State, Giant Courage: Rhode Island Strong",
+                "Naval War College Strategic Minds, Ocean State Pride"
+            ],
+            "lifestyle_environments": [
+                "Newport harbor sailing dock with navy blue hulls and lighthouses",
+                "Narragansett seawall with rolling Atlantic ocean breakers",
+                "Historic Providence brick street lined with gas lamps"
+            ],
+            "archetype_prompt": "Distinguished naval officer veteran in navy peacoat, brisk ocean breeze, Newport harbor background"
+        }
+    },
+    {
+        "code": "SC",
+        "name": "South Carolina",
+        "nickname": "The Palmetto State",
+        "motto": "Dum spiro spero (While I Breathe, I Hope)",
+        "capital": "Columbia",
+        "region": "Southeast",
+        "demographics": {
+            "population": 5282634,
+            "median_age": 39.9,
+            "gender": {"male": 48.6, "female": 51.4},
+            "race_ethnicity": {"white": 63.4, "black": 26.3, "hispanic": 6.2, "asian": 1.8, "native_american": 0.4, "other": 1.9},
+            "veteran_population": 395000,
+            "veteran_percentage": 9.4
+        },
+        "religion_values": {
+            "christian_pct": 78,
+            "evangelical_pct": 35,
+            "catholic_pct": 10,
+            "mainline_protestant_pct": 15,
+            "unaffiliated_pct": 19
+        },
+        "cultural_heritage": {
+            "symbols": ["Carolina Wren", "Yellow Jessamine", "Sabal Palmetto", "Crescent Moon Flag", "Charleston Battery", "Fort Sumter"],
+            "state_bird": "Carolina Wren",
+            "state_flower": "Yellow Jessamine",
+            "state_tree": "Sabal Palmetto",
+            "regional_vibe": "Marine Corps recruit training crucible at Parris Island, Army basic training at Fort Jackson, Palmetto moon pride, coastal Southern hospitality",
+            "military_ties": ["Marine Corps Recruit Depot Parris Island (Crucible & Eagle, Globe, and Anchor)", "Fort Jackson (Army's largest Basic Combat Training center)", "Joint Base Charleston (C-17 Airlift & Naval Weapons Station)", "Shaw AFB (9th Air Force / US ARCENT)"],
+            "popular_slogans": [
+                "Parris Island Crucible Made: Marine Corps SC Veteran",
+                "Victory Starts Here: Fort Jackson Army Strong",
+                "While I Breathe, I Hope: Palmetto State Defender"
+            ],
+            "lifestyle_environments": [
+                "Historic Charleston battery with cobblestone streets and live oaks",
+                "Palmetto fringed marshland sunset over tranquil inlet",
+                "Parris Island parade deck with American and Marine Corps flags"
+            ],
+            "archetype_prompt": "Hardened Marine Corps veteran with crisp posture and disciplined gaze, coastal palmetto tree backdrop at sunset"
+        }
+    },
+    {
+        "code": "SD",
+        "name": "South Dakota",
+        "nickname": "The Mount Rushmore State",
+        "motto": "Under God the People Rule",
+        "capital": "Pierre",
+        "region": "Upper Midwest / Great Plains",
+        "demographics": {
+            "population": 909824,
+            "median_age": 37.4,
+            "gender": {"male": 50.5, "female": 49.5},
+            "race_ethnicity": {"white": 81.4, "black": 2.3, "hispanic": 4.6, "asian": 1.6, "native_american": 8.7, "other": 1.4},
+            "veteran_population": 62000,
+            "veteran_percentage": 8.9
+        },
+        "religion_values": {
+            "christian_pct": 79,
+            "evangelical_pct": 25,
+            "catholic_pct": 22,
+            "mainline_protestant_pct": 32,
+            "unaffiliated_pct": 18
+        },
+        "cultural_heritage": {
+            "symbols": ["Ring-necked Pheasant", "American Pasque", "Black Hills Spruce", "Mount Rushmore", "Black Hills Granite", "Badlands"],
+            "state_bird": "Ring-necked Pheasant",
+            "state_flower": "American Pasque",
+            "state_tree": "Black Hills Spruce",
+            "regional_vibe": "Monumental American greatness at Mount Rushmore, B-1B Lancer bomber strike force at Ellsworth, Black Hills pine majesty, sovereign Lakota heritage",
+            "military_ties": ["Ellsworth AFB (28th Bomb Wing B-1B Lancer & future home of B-21 Raider)", "Joe Foss Field (114th Fighter Wing F-16)"],
+            "popular_slogans": [
+                "B-1B Lancer Bone: Ellsworth Bomber Crew South Dakota Pride",
+                "Carved in Granite, Rooted in Faith: Mount Rushmore Strong",
+                "Under God the People Rule: South Dakota Defenders"
+            ],
+            "lifestyle_environments": [
+                "Granite spires of the Black Hills with pine-scented breeze",
+                "Ellsworth AFB flight line with supersonic B-1B bombers",
+                "Rolling prairie hunting field with golden prairie grass"
+            ],
+            "archetype_prompt": "Rugged B-1 bomber pilot or technician veteran in flight jacket, dramatic Black Hills granite peak backdrop"
+        }
+    },
+    {
+        "code": "TN",
+        "name": "Tennessee",
+        "nickname": "The Volunteer State",
+        "motto": "Agriculture and Commerce",
+        "capital": "Nashville",
+        "region": "Upper South / Appalachia",
+        "demographics": {
+            "population": 7051339,
+            "median_age": 38.9,
+            "gender": {"male": 48.8, "female": 51.2},
+            "race_ethnicity": {"white": 73.1, "black": 15.8, "hispanic": 6.2, "asian": 2.0, "native_american": 0.4, "other": 2.5},
+            "veteran_population": 465000,
+            "veteran_percentage": 8.2
+        },
+        "religion_values": {
+            "christian_pct": 81,
+            "evangelical_pct": 52,
+            "catholic_pct": 6,
+            "mainline_protestant_pct": 13,
+            "unaffiliated_pct": 14
+        },
+        "cultural_heritage": {
+            "symbols": ["Mockingbird", "Iris", "Tulip Poplar", "Tri-Star Flag", "Acoustic Guitar", "Great Smoky Mountains", "Davy Crockett Volunteer Spirit"],
+            "state_bird": "Mockingbird",
+            "state_flower": "Iris",
+            "state_tree": "Tulip Poplar",
+            "regional_vibe": "The Volunteer State ethos (War of 1812, Alamo, Mexican War), country & blues musical capital, Great Smoky Mountains serenity, nuclear technology at Oak Ridge",
+            "military_ties": ["Fort Campbell (KY/TN border - 101st Airborne)", "Naval Support Activity Mid-South (Millington - Navy Personnel Command)", "Arnold AFB (Arnold Engineering Development Complex)", "McGhee Tyson Air National Guard Base"],
+            "popular_slogans": [
+                "The Volunteer Spirit: When Duty Calls, Tennessee Steps Up",
+                "Tri-Star Pride: Country, God, and Freedom",
+                "Smoky Mountain Tough, Battle Proven: Tennessee Veteran"
+            ],
+            "lifestyle_environments": [
+                "Misty Great Smoky Mountains scenic overlook with autumn colors",
+                "Rustic log cabin front porch with acoustic guitar and rocking chairs",
+                "Country music hall or workshop with vintage neon and flags"
+            ],
+            "archetype_prompt": "Charismatic Volunteer State veteran with acoustic guitar case and tactical watch, misty Smoky Mountains backdrop"
+        }
+    },
+    {
+        "code": "TX",
+        "name": "Texas",
+        "nickname": "The Lone Star State",
+        "motto": "Friendship",
+        "capital": "Austin",
+        "region": "South / Southwest",
+        "demographics": {
+            "population": 30029572,
+            "median_age": 35.5,
+            "gender": {"male": 49.6, "female": 50.4},
+            "race_ethnicity": {"white": 40.1, "black": 12.2, "hispanic": 39.7, "asian": 5.4, "native_american": 0.5, "other": 2.1},
+            "veteran_population": 1580000,
+            "veteran_percentage": 7.3
+        },
+        "religion_values": {
+            "christian_pct": 77,
+            "evangelical_pct": 31,
+            "catholic_pct": 23,
+            "mainline_protestant_pct": 13,
+            "unaffiliated_pct": 18
+        },
+        "cultural_heritage": {
+            "symbols": ["Northern Mockingbird", "Bluebonnet", "Pecan Tree", "Lone Star", "Longhorn", "The Alamo", "Cowboy Hat & Boots", "Oil Derrick"],
+            "state_bird": "Northern Mockingbird",
+            "state_flower": "Bluebonnet",
+            "state_tree": "Pecan",
+            "regional_vibe": "Lone Star independence, Military City USA (San Antonio), massive armor & cavalry power, western ranching grit, deep state patriotism",
+            "military_ties": ["Fort Cavazos (formerly Fort Hood - III Armored Corps, 1st Cavalry Division)", "Joint Base San Antonio (Lackland Air Force Basic Training, Fort Sam Houston Army Medical Center)", "Fort Bliss (El Paso - 1st Armored Division)", "Dyess AFB (B-1B Bombers)", "Naval Air Station Corpus Christi"],
+            "popular_slogans": [
+                "Don't Mess with Texas Veterans: Lone Star Steel",
+                "First Team! 1st Cavalry & III Armored Corps Texas Pride",
+                "Remember the Alamo: Texas Born, Army Forged, God & Country"
+            ],
+            "lifestyle_environments": [
+                "Expansive Hill Country ranch with barbed wire fence and limestone ranch gate",
+                "San Antonio Riverwalk or Alamo mission stone plaza",
+                "Open West Texas oilfield plains at golden sunset with heavy pickup truck"
+            ],
+            "archetype_prompt": "Rugged, tall Texas veteran in cowboy boots and denim shirt, standing beside a heavy-duty pickup on a Texas Hill Country ranch"
+        }
+    },
+    {
+        "code": "UT",
+        "name": "Utah",
+        "nickname": "The Beehive State",
+        "motto": "Industry",
+        "capital": "Salt Lake City",
+        "region": "Mountain West",
+        "demographics": {
+            "population": 3380800,
+            "median_age": 31.9,
+            "gender": {"male": 50.7, "female": 49.3},
+            "race_ethnicity": {"white": 77.2, "black": 1.4, "hispanic": 15.1, "asian": 2.8, "native_american": 1.2, "other": 2.3},
+            "veteran_population": 134000,
+            "veteran_percentage": 5.4
+        },
+        "religion_values": {
+            "christian_pct": 73,
+            "evangelical_pct": 7,
+            "catholic_pct": 5,
+            "mainline_protestant_pct": 6,
+            "unaffiliated_pct": 22
+        },
+        "cultural_heritage": {
+            "symbols": ["California Gull", "Sego Lily", "Blue Spruce", "Beehive", "Delicate Arch", "Wasatch Mountain Peaks", "Great Salt Lake"],
+            "state_bird": "California Gull",
+            "state_flower": "Sego Lily",
+            "state_tree": "Blue Spruce",
+            "regional_vibe": "Pioneer industry and family values, F-35 stealth fighter hub at Hill AFB, dramatic red rock arches, majestic Wasatch ski peaks",
+            "military_ties": ["Hill AFB (388th Fighter Wing - First operational F-35A Lightning II unit)", "Dugway Proving Ground", "Tooele Army Depot", "Camp Williams (Utah National Guard)"],
+            "popular_slogans": [
+                "Lightning II Strike: Hill AFB F-35 Utah Pride",
+                "Industry & Integrity: Built by Pioneers, Defended by Veterans",
+                "Red Rock Strong, Mountain High: Utah Veteran"
+            ],
+            "lifestyle_environments": [
+                "Dramatic red sandstone slickrock of Moab at glowing sunset",
+                "Wasatch Mountain alpine ridge with snow-covered evergreens",
+                "Modern high-tech garage workshop with outdoor mountain sports gear"
+            ],
+            "archetype_prompt": "Fit, youthful aerospace or tech veteran in technical fleece, radiant red rock arch canyon background"
+        }
+    },
+    {
+        "code": "VT",
+        "name": "Vermont",
+        "nickname": "The Green Mountain State",
+        "motto": "Freedom and Unity",
+        "capital": "Montpelier",
+        "region": "New England",
+        "demographics": {
+            "population": 647064,
+            "median_age": 42.8,
+            "gender": {"male": 49.4, "female": 50.6},
+            "race_ethnicity": {"white": 92.2, "black": 1.4, "hispanic": 2.4, "asian": 1.8, "native_american": 0.4, "other": 1.8},
+            "veteran_population": 42000,
+            "veteran_percentage": 8.0
+        },
+        "religion_values": {
+            "christian_pct": 54,
+            "evangelical_pct": 11,
+            "catholic_pct": 22,
+            "mainline_protestant_pct": 19,
+            "unaffiliated_pct": 37
+        },
+        "cultural_heritage": {
+            "symbols": ["Hermit Thrush", "Red Clover", "Sugar Maple", "Green Mountain Boys Flag", "Maple Syrup Bucket", "Covered Bridges"],
+            "state_bird": "Hermit Thrush",
+            "state_flower": "Red Clover",
+            "state_tree": "Sugar Maple",
+            "regional_vibe": "Ethan Allen's Green Mountain Boys valor, rustic maple sugaring heritage, pristine autumn foliage, independent civic pride",
+            "military_ties": ["Burlington Air National Guard Base (158th Fighter Wing - 'Green Mountain Boys' F-35A)", "Camp Ethan Allen Training Site (Army Mountain Warfare School)"],
+            "popular_slogans": [
+                "Green Mountain Boys: Ethan Allen's Valor Lives On",
+                "Freedom and Unity: Vermont Mountain Warfare Tough",
+                "Carved from Green Hills: True Vermont Defenders"
+            ],
+            "lifestyle_environments": [
+                "Rolling Green Mountains ablaze with red and gold autumn sugar maples",
+                "Rustic timber sugar shack with steaming evaporator and woodpile",
+                "Classic red covered bridge over a rushing rocky mountain stream"
+            ],
+            "archetype_prompt": "Hardy mountain warfare instructor veteran in rugged wool shirt, stunning autumn Vermont hillside backdrop"
+        }
+    },
+    {
+        "code": "VA",
+        "name": "Virginia",
+        "nickname": "The Old Dominion / Mother of Presidents",
+        "motto": "Sic Semper Tyrannis (Thus Always to Tyrants)",
+        "capital": "Richmond",
+        "region": "Mid-Atlantic / South",
+        "demographics": {
+            "population": 8683619,
+            "median_age": 38.6,
+            "gender": {"male": 49.0, "female": 51.0},
+            "race_ethnicity": {"white": 60.3, "black": 19.3, "hispanic": 10.5, "asian": 6.8, "native_american": 0.4, "other": 2.7},
+            "veteran_population": 712000,
+            "veteran_percentage": 10.4
+        },
+        "religion_values": {
+            "christian_pct": 73,
+            "evangelical_pct": 30,
+            "catholic_pct": 12,
+            "mainline_protestant_pct": 16,
+            "unaffiliated_pct": 20
+        },
+        "cultural_heritage": {
+            "symbols": ["Northern Cardinal", "American Dogwood", "Flowering Dogwood Tree", "The Pentagon", "Arlington National Cemetery", "Colonial Williamsburg", "Chesapeake Bay"],
+            "state_bird": "Northern Cardinal",
+            "state_flower": "American Dogwood",
+            "state_tree": "Flowering Dogwood",
+            "regional_vibe": "The Pentagon headquarters of the Armed Forces, world's largest naval base at Norfolk, Quantico Marine Corps cradle, Arlington hallowed ground, high veteran concentration",
+            "military_ties": ["Naval Station Norfolk (World's largest naval base - Atlantic Fleet)", "Marine Corps Base Quantico (Crossroads of the Marine Corps, FBI Academy)", "Joint Base Langley-Eustis (1st Fighter Wing F-22 Raptors)", "Fort Gregg-Adams (formerly Fort Lee)", "The Pentagon (Arlington)"],
+            "popular_slogans": [
+                "Sic Semper Tyrannis: Virginia Defender of the Republic",
+                "Crossroads of the Corps: Quantico & Norfolk Navy Pride",
+                "Hallowed Ground, Living Honor: Old Dominion Veteran"
+            ],
+            "lifestyle_environments": [
+                "Colonial brick estate with boxwood gardens and American flag",
+                "Norfolk naval piers with aircraft carriers and missile destroyers",
+                "Shenandoah Valley scenic mountain overlook with rolling morning fog"
+            ],
+            "archetype_prompt": "Impeccably groomed naval or Marine officer veteran in tailored dark jacket, classic Virginia brick architecture backdrop"
+        }
+    },
+    {
+        "code": "WA",
+        "name": "Washington",
+        "nickname": "The Evergreen State",
+        "motto": "Alki (By and By)",
+        "capital": "Olympia",
+        "region": "Pacific Northwest",
+        "demographics": {
+            "population": 7785786,
+            "median_age": 37.9,
+            "gender": {"male": 50.1, "female": 49.9},
+            "race_ethnicity": {"white": 65.5, "black": 4.3, "hispanic": 14.0, "asian": 9.6, "native_american": 1.4, "other": 5.2},
+            "veteran_population": 542000,
+            "veteran_percentage": 8.7
+        },
+        "religion_values": {
+            "christian_pct": 60,
+            "evangelical_pct": 25,
+            "catholic_pct": 17,
+            "mainline_protestant_pct": 14,
+            "unaffiliated_pct": 32
+        },
+        "cultural_heritage": {
+            "symbols": ["Willow Goldfinch", "Coast Rhododendron", "Western Hemlock", "Mount Rainier", "Orca Whale", "Puget Sound Ferries", "Space Needle"],
+            "state_bird": "Willow Goldfinch",
+            "state_flower": "Coast Rhododendron",
+            "state_tree": "Western Hemlock",
+            "regional_vibe": "Joint Base Lewis-McChord joint army/air power, Trident ballistic submarines at Bangor, Mount Rainier majestic skyline, high-tech aerospace innovation",
+            "military_ties": ["Joint Base Lewis-McChord (JBLM - I Corps & 62nd Airlift Wing)", "Naval Base Kitsap (Bangor Trident Submarine Base & Bremerton Shipyard)", "Naval Air Station Whidbey Island (EA-18G Growler & P-8 Poseidon)", "Fairchild AFB (KC-135 Tankers)"],
+            "popular_slogans": [
+                "America's Corps: JBLM Washington Veteran Pride",
+                "Silent Depths, High Skies: Puget Sound Defenders",
+                "Evergreen Tough: Standing Tall Like Mount Rainier"
+            ],
+            "lifestyle_environments": [
+                "Puget Sound shore with driftwood and snowcapped Mount Rainier across the water",
+                "Misty evergreen hemlock forest trail with heavy morning fog",
+                "Whidbey Island naval airstrip with tactical jet silhouettes"
+            ],
+            "archetype_prompt": "Rugged Pacific Northwest special operator or aviator veteran, waterproof dark jacket, snow-capped Mount Rainier background"
+        }
+    },
+    {
+        "code": "WV",
+        "name": "West Virginia",
+        "nickname": "The Mountain State",
+        "motto": "Montani Semper Liberi (Mountaineers Are Always Free)",
+        "capital": "Charleston",
+        "region": "Appalachia",
+        "demographics": {
+            "population": 1775156,
+            "median_age": 42.8,
+            "gender": {"male": 49.3, "female": 50.7},
+            "race_ethnicity": {"white": 91.8, "black": 3.7, "hispanic": 1.9, "asian": 0.8, "native_american": 0.2, "other": 1.6},
+            "veteran_population": 138000,
+            "veteran_percentage": 9.6
+        },
+        "religion_values": {
+            "christian_pct": 78,
+            "evangelical_pct": 39,
+            "catholic_pct": 6,
+            "mainline_protestant_pct": 19,
+            "unaffiliated_pct": 18
+        },
+        "cultural_heritage": {
+            "symbols": ["Northern Cardinal", "Rhododendron maximum", "Sugar Maple", "Black Bear", "Coal Mining Miner's Pick", "New River Gorge Bridge"],
+            "state_bird": "Northern Cardinal",
+            "state_flower": "Rhododendron",
+            "state_tree": "Sugar Maple",
+            "regional_vibe": "Mountaineers Are Always Free, coal miner iron grit, deeply patriotic Appalachian heritage, highest military service per capita history",
+            "military_ties": ["Camp Dawson (Joint Interagency Training Education Center)", "130th Airlift Wing (McLaughlin Air National Guard Base)", "167th Airlift Wing (Martinsburg)"],
+            "popular_slogans": [
+                "Montani Semper Liberi: Mountaineers Are Always Free",
+                "Almost Heaven, Defended by Heroes: West Virginia Veteran",
+                "Coal Country Grit, Mountain State Honor: WV Strong"
+            ],
+            "lifestyle_environments": [
+                "New River Gorge panoramic mountain bridge overlook with autumn colors",
+                "Rustic Appalachian log cabin porch with wood-burning fireplace",
+                "Mountain dirt hollow road with pickup truck and American flag"
+            ],
+            "archetype_prompt": "Weathered, authentic Appalachian mountaineer veteran with full beard and field flannel, sweeping New River Gorge backdrop"
+        }
+    },
+    {
+        "code": "WI",
+        "name": "Wisconsin",
+        "nickname": "The Badger State / America's Dairyland",
+        "motto": "Forward",
+        "capital": "Madison",
+        "region": "Midwest / Great Lakes",
+        "demographics": {
+            "population": 5892539,
+            "median_age": 39.9,
+            "gender": {"male": 49.7, "female": 50.3},
+            "race_ethnicity": {"white": 79.9, "black": 6.4, "hispanic": 7.6, "asian": 3.1, "native_american": 1.0, "other": 2.0},
+            "veteran_population": 348000,
+            "veteran_percentage": 7.3
+        },
+        "religion_values": {
+            "christian_pct": 74,
+            "evangelical_pct": 22,
+            "catholic_pct": 25,
+            "mainline_protestant_pct": 23,
+            "unaffiliated_pct": 21
+        },
+        "cultural_heritage": {
+            "symbols": ["American Robin", "Wood Violet", "Sugar Maple", "Badger", "Red Granite", "Dairy Barns", "Harley-Davidson Heritage"],
+            "state_bird": "American Robin",
+            "state_flower": "Wood Violet",
+            "state_tree": "Sugar Maple",
+            "regional_vibe": "Badger tenacity (Civil War Iron Brigade), America's Dairyland work ethic, Fort McCoy training cornerstone, Harley-Davidson rumble",
+            "military_ties": ["Fort McCoy (Total Force Training Center)", "Volk Field Combat Readiness Training Center", "115th Fighter Wing (Truax Field F-35A)", "128th Air Refueling Wing (Milwaukee)"],
+            "popular_slogans": [
+                "Iron Brigade Courage: Black Hats of Wisconsin",
+                "Forward! Never Back Down: Proud Wisconsin Veteran",
+                "Badger Tough, Heartland True: Wisconsin Defenders"
+            ],
+            "lifestyle_environments": [
+                "Classic red timber dairy barn under picturesque blue skies",
+                "Northwoods lake dock with pine trees and clear fresh water",
+                "Cozy basement workshop with Harley-Davidson motorcycle and tools"
+            ],
+            "archetype_prompt": "Sturdy Midwestern craftsman veteran in red-and-black buffalo plaid shirt, picturesque Wisconsin dairy farm backdrop"
+        }
+    },
+    {
+        "code": "WY",
+        "name": "Wyoming",
+        "nickname": "The Equality State / Cowboy State",
+        "motto": "Equal Rights",
+        "capital": "Cheyenne",
+        "region": "Mountain West",
+        "demographics": {
+            "population": 581381,
+            "median_age": 38.4,
+            "gender": {"male": 51.0, "female": 49.0},
+            "race_ethnicity": {"white": 83.7, "black": 1.1, "hispanic": 10.4, "asian": 1.1, "native_american": 2.4, "other": 1.3},
+            "veteran_population": 47000,
+            "veteran_percentage": 10.3
+        },
+        "religion_values": {
+            "christian_pct": 71,
+            "evangelical_pct": 27,
+            "catholic_pct": 14,
+            "mainline_protestant_pct": 16,
+            "unaffiliated_pct": 26
+        },
+        "cultural_heritage": {
+            "symbols": ["Western Meadowlark", "Indian Paintbrush", "Plains Cottonwood", "Bucking Horse & Rider", "Grand Tetons", "Yellowstone Geysers", "Minuteman Missile Silos"],
+            "state_bird": "Western Meadowlark",
+            "state_flower": "Indian Paintbrush",
+            "state_tree": "Plains Cottonwood",
+            "regional_vibe": "Bucking horse cowboy code, Grand Teton soaring wilderness, F.E. Warren nuclear strategic defense, unapologetic independence",
+            "military_ties": ["F.E. Warren AFB (90th Missile Wing - Minuteman III ICBM nuclear strategic deterrence)", "Camp Guernsey Joint Training Center", "Wyoming Air National Guard (153rd Airlift Wing)"],
+            "popular_slogans": [
+                "Peace Through Strength: F.E. Warren ICBM Shield Veteran",
+                "Cowboy Code of Honor: Ride for the Brand, Defend the Land",
+                "Equal Rights, Unshakable Courage: Wyoming Strong"
+            ],
+            "lifestyle_environments": [
+                "Grand Teton peaks reflecting in Snake River at early sunrise",
+                "Vast high plains cattle ranch with rustic log buck-and-rail fencing",
+                "Cheyenne Frontier Days arena or weathered timber horse barn"
+            ],
+            "archetype_prompt": "Authentic Wyoming cowboy veteran with weathered Stetson hat and shearling jacket, dramatic jagged Grand Teton backdrop"
+        }
+    }
+]
+
+def main():
+    output_path = os.path.join(os.path.dirname(__file__), "app", "data", "us_states.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(STATES_DATA, f, indent=2, ensure_ascii=False)
+    print(f"Successfully generated {len(STATES_DATA)} US States in {output_path}")
+
+if __name__ == "__main__":
+    main()
+

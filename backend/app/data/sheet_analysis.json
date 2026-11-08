@@ -1,0 +1,1762 @@
+{
+  "check đối thủ": {
+    "total_rows": 11,
+    "total_cols": 2,
+    "sample_rows": [
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        "gg mua sắm"
+      ],
+      [
+        1.0,
+        null
+      ],
+      [
+        2.0,
+        "https://servicefirstproducts.com/products/veteran-usa-flag?"
+      ],
+      [
+        3.0,
+        "https://www.darkknightarmoury.com/product/veteran-by-choice-premium-t-shirt/"
+      ],
+      [
+        4.0,
+        "https://fantastictees.com/products/veteran-t-shirt?"
+      ],
+      [
+        5.0,
+        "https://www.7point62design.com"
+      ],
+      [
+        6.0,
+        null
+      ],
+      [
+        7.0,
+        null
+      ],
+      [
+        8.0,
+        "https://store.vetfriends.com/i-am-a-veteran-special-edition-t-shirt-in-o-d/"
+      ]
+    ]
+  },
+  "Cấu trúc seo": {
+    "total_rows": 1000,
+    "total_cols": 4,
+    "sample_rows": [
+      [
+        "Topic",
+        "total vlume off Topic",
+        "Coutry of keyword",
+        "landingpgae"
+      ],
+      [
+        null,
+        "Áo thun cho cựu quân nhân",
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ]
+    ]
+  },
+  "Dich_Viet_Anh": {
+    "total_rows": 220,
+    "total_cols": 3,
+    "sample_rows": [
+      [
+        "Tiếng Việt",
+        "Tiếng Anh tự động",
+        "Bản biên tập tiếng Anh Mỹ"
+      ],
+      [
+        "Áo thun cho cựu quân nhân",
+        "T-shirts for veterans",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ]
+  },
+  "Tu khoa SEO": {
+    "total_rows": 108,
+    "total_cols": 5,
+    "sample_rows": [
+      [
+        "99 từ khóa cho áo thun cựu quân nhân Mỹ",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Từ khóa đề xuất; chưa xác minh lượng tìm kiếm, độ khó hoặc CPC. Không tạo một trang cho mỗi biến thể.",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Nguồn: tổng hợp nội dung trao đổi ngày 25/10/2026; thị trường Mỹ, ngôn ngữ tiếng Anh.",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Từ khóa tiếng Anh",
+        "Nghĩa tiếng Việt",
+        "Nhóm chủ đề",
+        "Loại trang gợi ý",
+        "Ghi chú triển khai"
+      ],
+      [
+        "veteran t shirts",
+        "Áo thun cựu quân nhân",
+        "Tổng quát",
+        "Danh mục",
+        "Gom biến thể cùng ý định vào một trang."
+      ],
+      [
+        "veteran shirts",
+        "Áo cựu quân nhân",
+        "Tổng quát",
+        "Danh mục",
+        "Gom biến thể cùng ý định vào một trang."
+      ],
+      [
+        "veterans t shirts",
+        "Áo thun cựu quân nhân (biến thể số nhiều)",
+        "Tổng quát",
+        "Danh mục",
+        "Gom biến thể cùng ý định vào một trang."
+      ],
+      [
+        "military veteran shirts",
+        "Áo dành cho cựu quân nhân",
+        "Tổng quát",
+        "Danh mục",
+        "Gom biến thể cùng ý định vào một trang."
+      ],
+      [
+        "US veteran t shirts",
+        "Áo thun cựu quân nhân Mỹ",
+        "Tổng quát",
+        "Danh mục",
+        "Gom biến thể cùng ý định vào một trang."
+      ],
+      [
+        "American veteran shirts",
+        "Áo cựu quân nhân Mỹ",
+        "Tổng quát",
+        "Danh mục",
+        "Gom biến thể cùng ý định vào một trang."
+      ],
+      [
+        "veteran graphic tees",
+        "Áo thun cựu quân nhân in hình",
+        "Tổng quát",
+        "Danh mục",
+        "Gom biến thể cùng ý định vào một trang."
+      ],
+      [
+        "veteran apparel",
+        "Trang phục cựu quân nhân",
+        "Tổng quát",
+        "Danh mục",
+        "Gom biến thể cùng ý định vào một trang."
+      ],
+      [
+        "veteran clothing",
+        "Quần áo cựu quân nhân",
+        "Tổng quát",
+        "Danh mục",
+        "Gom biến thể cùng ý định vào một trang."
+      ],
+      [
+        "patriotic veteran shirts",
+        "Áo cựu quân nhân chủ đề yêu nước",
+        "Tổng quát",
+        "Danh mục",
+        "Gom biến thể cùng ý định vào một trang."
+      ],
+      [
+        "Army veteran shirts",
+        "Áo cựu quân nhân Lục quân",
+        "Quân chủng",
+        "Danh mục",
+        "Cần sản phẩm phù hợp; kiểm tra quyền sử dụng tên, logo và huy hiệu."
+      ]
+    ]
+  },
+  "Ke hoach Ads": {
+    "total_rows": 19,
+    "total_cols": 5,
+    "sample_rows": [
+      [
+        "Nhóm Ads và từ khóa cân nhắc phủ định",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Đây là danh sách nghiên cứu, chưa phải kế hoạch chi ngân sách. Không phủ định quá rộng các từ free, gift hoặc design.",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Nguồn: tổng hợp nội dung trao đổi ngày 25/10/2026; thị trường Mỹ, ngôn ngữ tiếng Anh.",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Mục đích",
+        "Từ khóa tiếng Anh",
+        "Nghĩa / nhóm",
+        "Trang đích",
+        "Điều kiện sử dụng"
+      ],
+      [
+        "Nghiên cứu chạy Ads",
+        "veteran t shirts",
+        "Áo thun cựu quân nhân",
+        "Danh mục tổng",
+        "Kiểm tra CPC và chuyển đổi trước khi chi ngân sách"
+      ],
+      [
+        "Nghiên cứu chạy Ads",
+        "funny veteran shirts",
+        "Áo hài hước",
+        "Danh mục hài hước",
+        "Trang đích có mẫu áo phù hợp"
+      ],
+      [
+        "Nghiên cứu chạy Ads",
+        "veteran shirts for women",
+        "Áo nữ",
+        "Danh mục áo nữ",
+        "Có dáng áo và bảng size nữ"
+      ],
+      [
+        "Nghiên cứu chạy Ads",
+        "personalized veteran shirts",
+        "Áo cá nhân hóa",
+        "Trang tùy chỉnh",
+        "Có dịch vụ cá nhân hóa"
+      ],
+      [
+        "Nghiên cứu chạy Ads",
+        "veteran dad shirts",
+        "Áo cho bố",
+        "Bộ sưu tập cho bố",
+        "Thông điệp phù hợp người nhận"
+      ],
+      [
+        "Nghiên cứu chạy Ads",
+        "veteran grandpa shirts",
+        "Áo cho ông",
+        "Bộ sưu tập cho ông",
+        "Thông điệp phù hợp người nhận"
+      ],
+      [
+        "Nghiên cứu chạy Ads",
+        "Army veteran shirts",
+        "Áo Lục quân",
+        "Danh mục Lục quân",
+        "Kiểm tra quyền sử dụng thương hiệu"
+      ],
+      [
+        "Nghiên cứu chạy Ads",
+        "Veterans Day shirts",
+        "Áo Veterans Day",
+        "Bộ sưu tập theo dịp",
+        "Kiểm tra lịch sản xuất và giao hàng"
+      ],
+      [
+        "Cân nhắc phủ định",
+        "free svg",
+        "Tệp SVG miễn phí",
+        "Không áp dụng",
+        "Chỉ loại trừ khi không liên quan; xem báo cáo truy vấn trước"
+      ],
+      [
+        "Cân nhắc phủ định",
+        "svg download",
+        "Tải SVG",
+        "Không áp dụng",
+        "Chỉ loại trừ khi không liên quan; xem báo cáo truy vấn trước"
+      ],
+      [
+        "Cân nhắc phủ định",
+        "png download",
+        "Tải PNG",
+        "Không áp dụng",
+        "Chỉ loại trừ khi không liên quan; xem báo cáo truy vấn trước"
+      ]
+    ]
+  },
+  "Y tuong thiet ke": {
+    "total_rows": 14,
+    "total_cols": 4,
+    "sample_rows": [
+      [
+        "10 hướng thiết kế áo",
+        null,
+        null,
+        null
+      ],
+      [
+        "Ý tưởng sáng tạo chưa kiểm chứng bán chạy. Kiểm tra quyền dùng tên, logo, hình và câu chữ trước khi thương mại hóa.",
+        null,
+        null,
+        null
+      ],
+      [
+        "Nguồn: tổng hợp nội dung trao đổi ngày 25/10/2026; thị trường Mỹ, ngôn ngữ tiếng Anh.",
+        null,
+        null,
+        null
+      ],
+      [
+        "Ý tưởng",
+        "Cách thể hiện",
+        "Từ khóa liên quan",
+        "Lưu ý"
+      ],
+      [
+        "Cựu quân nhân và người bố",
+        "Chữ lớn, bố cục gọn, nhấn vai trò làm bố",
+        "veteran dad shirts",
+        "Thiết kế gốc; chưa kiểm chứng bán chạy"
+      ],
+      [
+        "Người ông và gia đình",
+        "Chữ cổ điển, tùy chỉnh tên hoặc năm",
+        "veteran grandpa shirts",
+        "Xác nhận người nhận là cựu quân nhân"
+      ],
+      [
+        "Nữ cựu quân nhân",
+        "Typography mạnh mẽ, nhiều màu và dáng áo",
+        "female veteran shirts",
+        "Không nhầm nữ cựu quân nhân với vợ quân nhân"
+      ],
+      [
+        "Hài hước đời thường",
+        "Câu đùa tự viết về cà phê, dậy sớm, đúng giờ",
+        "funny veteran shirts",
+        "Tránh sao chép slogan"
+      ],
+      [
+        "Dấu mốc phục vụ",
+        "Tên và khoảng năm phục vụ",
+        "veteran shirt with service years",
+        "Cần chức năng cá nhân hóa"
+      ],
+      [
+        "Tối giản",
+        "Chữ nhỏ trước ngực, hình tự thiết kế sau lưng",
+        "minimalist veteran shirts",
+        "Chưa xác minh nhu cầu tìm kiếm"
+      ],
+      [
+        "Cổ điển",
+        "Màu phai, chữ hiệu ứng cũ, bố cục hoài niệm",
+        "vintage style veteran shirts",
+        "Phân biệt phong cách vintage với áo vintage thật"
+      ],
+      [
+        "Họp mặt",
+        "Tên nhóm và năm họp mặt",
+        "custom military reunion shirts",
+        "Kiểm tra quyền dùng huy hiệu đơn vị"
+      ],
+      [
+        "Câu cá sau khi xuất ngũ",
+        "Hình cần câu tự vẽ kết hợp chủ đề cựu quân nhân",
+        "Hướng mở rộng cần nghiên cứu",
+        "Chưa bổ sung vào danh sách từ khóa chính"
+      ],
+      [
+        "Gia đình tặng quà",
+        "Tên người nhận và thông điệp gia đình",
+        "personalized veteran shirts",
+        "Cần chức năng cá nhân hóa"
+      ]
+    ]
+  },
+  "50 tieu bang": {
+    "total_rows": 53,
+    "total_cols": 6,
+    "sample_rows": [
+      [
+        "50 TIỂU BANG HOA KỲ",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "STT",
+        "Tiểu bang",
+        "Mã USPS",
+        "Lá cờ",
+        "Ảnh gốc",
+        "Trang nguồn cờ"
+      ],
+      [
+        1.0,
+        "Alabama",
+        "AL",
+        null,
+        "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Alabama.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Alabama.svg"
+      ],
+      [
+        2.0,
+        "Alaska",
+        "AK",
+        null,
+        "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Alaska.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Alaska.svg"
+      ],
+      [
+        3.0,
+        "Arizona",
+        "AZ",
+        null,
+        "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arizona.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Arizona.svg"
+      ],
+      [
+        4.0,
+        "Arkansas",
+        "AR",
+        null,
+        "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arkansas.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Arkansas.svg"
+      ],
+      [
+        5.0,
+        "California",
+        "CA",
+        null,
+        "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_California.svg"
+      ],
+      [
+        6.0,
+        "Colorado",
+        "CO",
+        null,
+        "https://upload.wikimedia.org/wikipedia/commons/4/46/Flag_of_Colorado.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Colorado.svg"
+      ],
+      [
+        7.0,
+        "Connecticut",
+        "CT",
+        null,
+        "https://upload.wikimedia.org/wikipedia/commons/9/96/Flag_of_Connecticut.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Connecticut.svg"
+      ],
+      [
+        8.0,
+        "Delaware",
+        "DE",
+        null,
+        "https://upload.wikimedia.org/wikipedia/commons/c/c6/Flag_of_Delaware.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Delaware.svg"
+      ],
+      [
+        9.0,
+        "Florida",
+        "FL",
+        null,
+        "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Florida.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Florida.svg"
+      ],
+      [
+        10.0,
+        "Georgia",
+        "GA",
+        null,
+        "https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_the_State_of_Georgia.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Georgia_(U.S._state).svg"
+      ],
+      [
+        11.0,
+        "Hawaii",
+        "HI",
+        null,
+        "https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Hawaii.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Hawaii.svg"
+      ],
+      [
+        12.0,
+        "Idaho",
+        "ID",
+        null,
+        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_Idaho.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Idaho.svg"
+      ]
+    ]
+  },
+  "Dan so va tuoi": {
+    "total_rows": 55,
+    "total_cols": 12,
+    "sample_rows": [
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "DÂN SỐ, GIỚI TÍNH VÀ TUỔI — ACS 2024",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Tiểu bang",
+        "Dân số",
+        "Nam (%)",
+        "Nữ (%)",
+        "Tuổi trung vị",
+        "Dưới 18 (%)",
+        "18–24 (%)",
+        "25–34 (%)",
+        "35–44 (%)",
+        "45–54 (%)",
+        "55–64 (%)",
+        "65+ (%)"
+      ],
+      [
+        "Alabama",
+        5157699,
+        0.4828802534,
+        0.5171197466,
+        39.6,
+        0.2195170753,
+        0.09411852068,
+        0.1270618933,
+        0.1276509157,
+        0.1208575762,
+        0.125601746,
+        0.1851922728
+      ],
+      [
+        "Alaska",
+        740133,
+        0.5273390053,
+        0.4726609947,
+        36.3,
+        0.2353604014,
+        0.09189024135,
+        0.1530954572,
+        0.1461872393,
+        0.1116285857,
+        0.1140065367,
+        0.1478315384
+      ],
+      [
+        "Arizona",
+        7582384,
+        0.4989041705,
+        0.5010958295,
+        39.4,
+        0.2091362031,
+        0.09586430864,
+        0.1381800236,
+        0.1293862194,
+        0.1146151395,
+        0.1161572666,
+        0.1966608391
+      ],
+      [
+        "Arkansas",
+        3088354,
+        0.4913704841,
+        0.5086295159,
+        39.1,
+        0.2260560156,
+        0.09440077141,
+        0.1264502062,
+        0.1315001454,
+        0.1188814495,
+        0.1205085298,
+        0.1822028822
+      ],
+      [
+        "California",
+        39431264,
+        0.4989721861,
+        0.5010278139,
+        38.4,
+        0.2133164689,
+        0.09241727579,
+        0.1447769212,
+        0.1420694756,
+        0.1232894791,
+        0.1186560492,
+        0.1654743049
+      ],
+      [
+        "Colorado",
+        5957494,
+        0.5063738209,
+        0.4936261791,
+        38,
+        0.2025762846,
+        0.09159639943,
+        0.1583603777,
+        0.1498401845,
+        0.1205914769,
+        0.1124754805,
+        0.1645597965
+      ],
+      [
+        "Connecticut",
+        3675069,
+        0.4911189423,
+        0.5088810577,
+        41.2,
+        0.1978792779,
+        0.09301539645,
+        0.127400057,
+        0.1304878902,
+        0.1198518994,
+        0.1372638174,
+        0.1941016618
+      ],
+      [
+        "Delaware",
+        1051917,
+        0.4817518873,
+        0.5182481127,
+        42.1,
+        0.20319664,
+        0.08694602331,
+        0.1208726544,
+        0.1257152418,
+        0.1105362876,
+        0.1361533277,
+        0.2165798252
+      ],
+      [
+        "Florida",
+        23372216,
+        0.4915493678,
+        0.5084505894,
+        42.7,
+        0.1921912753,
+        0.08156368228,
+        0.1251500072,
+        0.1311160225,
+        0.1212422476,
+        0.1307705269,
+        0.2179661954
+      ],
+      [
+        "Georgia",
+        11180878,
+        0.4866868237,
+        0.5133131763,
+        38,
+        0.2263803433,
+        0.09489254779,
+        0.1365016236,
+        0.136838717,
+        0.1269871651,
+        0.1204868705,
+        0.1579127328
+      ]
+    ]
+  },
+  "Chung toc": {
+    "total_rows": 55,
+    "total_cols": 9,
+    "sample_rows": [
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "CHỦNG TỘC VÀ SẮC TỘC — ACS 2024",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Tiểu bang",
+        "Trắng (%)",
+        "Đen / Mỹ gốc Phi (%)",
+        "Bản địa Mỹ / Alaska (%)",
+        "Châu Á (%)",
+        "Hawaii / Thái Bình Dương (%)",
+        "Chủng tộc khác (%)",
+        "Đa chủng tộc (%)",
+        "Hispanic / Latino (%)"
+      ],
+      [
+        "Alabama",
+        0.6401166489,
+        0.2524588969,
+        0.004959963736,
+        0.015431106,
+        0.001118909808,
+        0.02492875214,
+        0.06098572251,
+        0.0595160749
+      ],
+      [
+        "Alaska",
+        0.5870836728,
+        0.02506036077,
+        0.1405463613,
+        0.0595528101,
+        0.01708882052,
+        0.02097731083,
+        0.1496906637,
+        0.07732258932
+      ],
+      [
+        "Arizona",
+        0.5731275282,
+        0.04759294702,
+        0.0401753591,
+        0.03992622901,
+        0.001796136941,
+        0.09336364394,
+        0.2040181558,
+        0.3212262792
+      ],
+      [
+        "Arkansas",
+        0.6818985129,
+        0.1417599796,
+        0.005490303249,
+        0.01786841793,
+        0.003806558445,
+        0.03128106428,
+        0.1178951636,
+        0.09541360867
+      ],
+      [
+        "California",
+        0.3807584002,
+        0.05352912349,
+        0.01422353592,
+        0.1610289236,
+        0.003951585219,
+        0.1885101122,
+        0.1979982939,
+        0.4075246992
+      ],
+      [
+        "Colorado",
+        0.6935988521,
+        0.04251233824,
+        0.01173429633,
+        0.03483444549,
+        0.001661772551,
+        0.06323010984,
+        0.1524281854,
+        0.2321358612
+      ],
+      [
+        "Connecticut",
+        0.6369798771,
+        0.1075783883,
+        0.00409543331,
+        0.04803556069,
+        0.0003224429256,
+        0.07997890652,
+        0.1230093911,
+        0.1923245523
+      ],
+      [
+        "Delaware",
+        0.5816580586,
+        0.2203928637,
+        0.003994611742,
+        0.04831084582,
+        0.0009582505084,
+        0.05390539368,
+        0.09077997599,
+        0.1167516068
+      ],
+      [
+        "Florida",
+        0.5418232914,
+        0.1476918149,
+        0.004288639126,
+        0.03091799254,
+        0.0008616213371,
+        0.06890869912,
+        0.2055078988,
+        0.2869256385
+      ],
+      [
+        "Georgia",
+        0.4983131021,
+        0.3060469849,
+        0.005010518852,
+        0.04896422267,
+        0.0007967173955,
+        0.05354659983,
+        0.08732185433,
+        0.116198388
+      ]
+    ]
+  },
+  "Ton giao": {
+    "total_rows": 55,
+    "total_cols": 17,
+    "sample_rows": [
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "TÔN GIÁO — PEW 2023–2024 (NGƯỜI TỪ 18 TUỔI)",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Tiểu bang",
+        "Kitô giáo (%)",
+        "Tôn giáo khác (%)",
+        "Không liên kết tôn giáo (%)",
+        "Tin Lành evangelical (%)",
+        "Tin Lành mainline (%)",
+        "Tin Lành truyền thống người Đen (%)",
+        "Công giáo (%)",
+        "Mormon (%)",
+        "Chính thống giáo (%)",
+        "Nhân Chứng Giê-hô-va (%)",
+        "Kitô giáo khác (%)",
+        "Do Thái giáo (%)",
+        "Hồi giáo (%)",
+        "Phật giáo (%)",
+        "Ấn Độ giáo (%)",
+        "Nguồn"
+      ],
+      [
+        "Alabama",
+        0.73,
+        0.03,
+        0.22,
+        0.43,
+        0.1,
+        0.13,
+        0.06,
+        "<1%",
+        "<1%",
+        "<1%",
+        0.01,
+        "<1%",
+        0.01,
+        0.01,
+        "<1%",
+        "https://www.pewresearch.org/religious-landscape-study/state/alabama/"
+      ],
+      [
+        "Alaska",
+        0.56,
+        0.06,
+        0.33,
+        0.26,
+        0.09,
+        0.01,
+        0.15,
+        0.03,
+        0.01,
+        "<1%",
+        0.02,
+        0.01,
+        "<1%",
+        0.01,
+        "<1%",
+        "https://www.pewresearch.org/religious-landscape-study/state/alaska/"
+      ],
+      [
+        "Arizona",
+        0.58,
+        0.1,
+        0.31,
+        0.19,
+        0.1,
+        0.01,
+        0.21,
+        0.05,
+        "<1%",
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.02,
+        0.02,
+        "https://www.pewresearch.org/religious-landscape-study/state/arizona/"
+      ],
+      [
+        "Arkansas",
+        0.79,
+        0.03,
+        0.18,
+        0.5,
+        0.13,
+        0.08,
+        0.05,
+        "<1%",
+        0.01,
+        "<1%",
+        0.01,
+        "<1%",
+        "<1%",
+        "<1%",
+        "<1%",
+        "https://www.pewresearch.org/religious-landscape-study/state/arkansas/"
+      ],
+      [
+        "California",
+        0.55,
+        0.09,
+        0.33,
+        0.16,
+        0.08,
+        0.02,
+        0.25,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.02,
+        0.01,
+        0.02,
+        0.02,
+        "https://www.pewresearch.org/religious-landscape-study/state/california/"
+      ],
+      [
+        "Colorado",
+        0.52,
+        0.07,
+        0.4,
+        0.17,
+        0.13,
+        "<1%",
+        0.14,
+        0.03,
+        0.01,
+        0.01,
+        0.02,
+        0.02,
+        "<1%",
+        0.01,
+        "<1%",
+        "https://www.pewresearch.org/religious-landscape-study/state/colorado/"
+      ],
+      [
+        "Connecticut",
+        0.57,
+        0.11,
+        0.31,
+        0.06,
+        0.11,
+        0.02,
+        0.35,
+        "<1%",
+        0.02,
+        0.01,
+        "<1%",
+        0.03,
+        0.04,
+        0.01,
+        0.01,
+        "https://www.pewresearch.org/religious-landscape-study/state/connecticut/"
+      ],
+      [
+        "Delaware",
+        0.7,
+        0.06,
+        0.24,
+        0.19,
+        0.16,
+        0.15,
+        0.19,
+        "<1%",
+        "<1%",
+        "<1%",
+        0.01,
+        0.02,
+        "<1%",
+        "<1%",
+        0.02,
+        "https://www.pewresearch.org/religious-landscape-study/state/delaware/"
+      ],
+      [
+        "Florida",
+        0.64,
+        0.07,
+        0.27,
+        0.22,
+        0.09,
+        0.07,
+        0.22,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.03,
+        0.01,
+        0.02,
+        0.01,
+        "https://www.pewresearch.org/religious-landscape-study/state/florida/"
+      ],
+      [
+        "Georgia",
+        0.67,
+        0.07,
+        0.26,
+        0.33,
+        0.1,
+        0.14,
+        0.08,
+        0.01,
+        0.01,
+        "<1%",
+        "<1%",
+        0.01,
+        0.01,
+        0.01,
+        0.02,
+        "https://www.pewresearch.org/religious-landscape-study/state/georgia/"
+      ]
+    ]
+  },
+  "Du lieu goc": {
+    "total_rows": 55,
+    "total_cols": 21,
+    "sample_rows": [
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "SỐ NGƯỜI — DỮ LIỆU ACS 2024",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "Tiểu bang",
+        "FIPS",
+        "Dân số",
+        "Nam",
+        "Nữ",
+        "Tuổi trung vị",
+        "Dưới 18",
+        "18–24",
+        "25–34",
+        "35–44",
+        "45–54",
+        "55–64",
+        "65+",
+        "Trắng",
+        "Đen",
+        "Bản địa Mỹ",
+        "Châu Á",
+        "Hawaii / TBD",
+        "Khác",
+        "Đa chủng tộc",
+        "Hispanic / Latino"
+      ],
+      [
+        "Alabama",
+        "01",
+        5157699.0,
+        2490551.0,
+        2667148.0,
+        39.6,
+        1132203.0,
+        485435.0,
+        655347.0,
+        658385.0,
+        623347.0,
+        647816.0,
+        955166.0,
+        3301529.0,
+        1302107.0,
+        25582.0,
+        79589.0,
+        5771.0,
+        128575.0,
+        314546.0,
+        306966.0
+      ],
+      [
+        "Alaska",
+        "02",
+        740133.0,
+        390301.0,
+        349832.0,
+        36.3,
+        174198.0,
+        68011.0,
+        113311.0,
+        108198.0,
+        82620.0,
+        84380.0,
+        109415.0,
+        434520.0,
+        18548.0,
+        104023.0,
+        44077.0,
+        12648.0,
+        15526.0,
+        110791.0,
+        57229.0
+      ],
+      [
+        "Arizona",
+        "04",
+        7582384.0,
+        3782883.0,
+        3799501.0,
+        39.4,
+        1585751.0,
+        726880.0,
+        1047734.0,
+        981056.0,
+        869056.0,
+        880749.0,
+        1491158.0,
+        4345673.0,
+        360868.0,
+        304625.0,
+        302736.0,
+        13619.0,
+        707919.0,
+        1546944.0,
+        2435661.0
+      ],
+      [
+        "Arkansas",
+        "05",
+        3088354.0,
+        1517526.0,
+        1570828.0,
+        39.1,
+        698141.0,
+        291543.0,
+        390523.0,
+        406119.0,
+        367148.0,
+        372173.0,
+        562707.0,
+        2105944.0,
+        437805.0,
+        16956.0,
+        55184.0,
+        11756.0,
+        96607.0,
+        364102.0,
+        294671.0
+      ],
+      [
+        "California",
+        "06",
+        39431264.0,
+        19675104.0,
+        19756160.0,
+        38.4,
+        8411338.0,
+        3644130.0,
+        5708737.0,
+        5601979.0,
+        4861460.0,
+        4678758.0,
+        6524861.0,
+        15013785.0,
+        2110721.0,
+        560852.0,
+        6349574.0,
+        155816.0,
+        7433192.0,
+        7807323.0,
+        16069214.0
+      ],
+      [
+        "Colorado",
+        "08",
+        5957494.0,
+        3016719.0,
+        2940775.0,
+        38.0,
+        1206847.0,
+        545685.0,
+        943431.0,
+        892672.0,
+        718423.0,
+        670072.0,
+        980364.0,
+        4132111.0,
+        253267.0,
+        69907.0,
+        207526.0,
+        9900.0,
+        376693.0,
+        908090.0,
+        1382948.0
+      ],
+      [
+        "Connecticut",
+        "09",
+        3675069.0,
+        1804896.0,
+        1870173.0,
+        41.2,
+        727220.0,
+        341838.0,
+        468204.0,
+        479552.0,
+        440464.0,
+        504454.0,
+        713337.0,
+        2340945.0,
+        395358.0,
+        15051.0,
+        176534.0,
+        1185.0,
+        293928.0,
+        452068.0,
+        706806.0
+      ],
+      [
+        "Delaware",
+        "10",
+        1051917.0,
+        506763.0,
+        545154.0,
+        42.1,
+        213746.0,
+        91460.0,
+        127148.0,
+        132242.0,
+        116275.0,
+        143222.0,
+        227824.0,
+        611856.0,
+        231835.0,
+        4202.0,
+        50819.0,
+        1008.0,
+        56704.0,
+        95493.0,
+        122813.0
+      ],
+      [
+        "Florida",
+        "12",
+        23372216.0,
+        11488598.0,
+        11883617.0,
+        42.7,
+        4491936.0,
+        1906324.0,
+        2925033.0,
+        3064472.0,
+        2833700.0,
+        3056397.0,
+        5094353.0,
+        12663611.0,
+        3451885.0,
+        100235.0,
+        722622.0,
+        20138.0,
+        1610549.0,
+        4803175.0,
+        6706088.0
+      ],
+      [
+        "Georgia",
+        "13",
+        11180878.0,
+        5441586.0,
+        5739292.0,
+        38.0,
+        2531131.0,
+        1060982.0,
+        1526208.0,
+        1529977.0,
+        1419828.0,
+        1347149.0,
+        1765603.0,
+        5571578.0,
+        3421874.0,
+        56022.0,
+        547463.0,
+        8908.0,
+        598698.0,
+        976335.0,
+        1299200.0
+      ]
+    ]
+  },
+  "Giai thich": {
+    "total_rows": 21,
+    "total_cols": 2,
+    "sample_rows": [
+      [
+        null,
+        null
+      ],
+      [
+        "NGUỒN VÀ CÁCH ĐỌC",
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        "Mục",
+        "Giải thích"
+      ],
+      [
+        "Phạm vi",
+        "50 tiểu bang. Không gồm Washington, D.C. và Puerto Rico."
+      ],
+      [
+        "Dân số",
+        "ACS 2024 1-year estimates; số liệu khảo sát năm 2024, không phải dân số hiện tại năm 2026."
+      ],
+      [
+        "Nguồn Census",
+        "https://data.census.gov/table/ACSDT1Y2024.B01001"
+      ],
+      [
+        "Tải dữ liệu",
+        "https://api.censusreporter.org/1.0/data/show/acs2024_1yr?table_ids=B01001,B01002,B02001,B03003&geo_ids=040|01000US"
+      ],
+      [
+        "Bảng sử dụng",
+        "B01001: giới tính và tuổi; B01002: tuổi trung vị; B02001: chủng tộc; B03003: Hispanic/Latino."
+      ],
+      [
+        "Tuổi trung vị",
+        "Một nửa dân số trẻ hơn và một nửa lớn tuổi hơn mức này. Không phải tuổi trung bình."
+      ],
+      [
+        "Chủng tộc",
+        "Các nhóm “alone” là tự nhận một chủng tộc. Bảy nhóm chủng tộc cộng lại bằng 100% trước làm tròn."
+      ],
+      [
+        "Hispanic / Latino",
+        "Là sắc tộc, có thể thuộc bất kỳ chủng tộc nào. Không cộng cột này vào bảy nhóm chủng tộc."
+      ],
+      [
+        "Màu da",
+        "Census không đo màu da. Bảng dùng các nhóm chủng tộc/sắc tộc tự khai."
+      ],
+      [
+        "Tôn giáo",
+        "Pew Religious Landscape Study 2023–2024; mẫu người trưởng thành từ 18 tuổi."
+      ]
+    ]
+  }
+}

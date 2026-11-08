@@ -1,0 +1,702 @@
+{
+  "check đối thủ": {
+    "non_empty_rows": 9,
+    "header": [
+      "",
+      "gg mua sắm"
+    ],
+    "sample": [
+      [
+        "1.0",
+        ""
+      ],
+      [
+        "2.0",
+        "https://servicefirstproducts.com/products/veteran-usa-flag?"
+      ],
+      [
+        "3.0",
+        "https://www.darkknightarmoury.com/product/veteran-by-choice-premium-t-shirt/"
+      ],
+      [
+        "4.0",
+        "https://fantastictees.com/products/veteran-t-shirt?"
+      ],
+      [
+        "5.0",
+        "https://www.7point62design.com"
+      ]
+    ]
+  },
+  "Cấu trúc seo": {
+    "non_empty_rows": 2,
+    "header": [
+      "Topic",
+      "total vlume off Topic",
+      "Coutry of keyword",
+      "landingpgae"
+    ],
+    "sample": [
+      [
+        "",
+        "Áo thun cho cựu quân nhân",
+        "",
+        ""
+      ]
+    ]
+  },
+  "Dich_Viet_Anh": {
+    "non_empty_rows": 2,
+    "header": [
+      "Tiếng Việt",
+      "Tiếng Anh tự động",
+      "Bản biên tập tiếng Anh Mỹ"
+    ],
+    "sample": [
+      [
+        "Áo thun cho cựu quân nhân",
+        "T-shirts for veterans",
+        ""
+      ]
+    ]
+  },
+  "Tu khoa SEO": {
+    "non_empty_rows": 107,
+    "header": [
+      "99 từ khóa cho áo thun cựu quân nhân Mỹ",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "sample": [
+      [
+        "Từ khóa đề xuất; chưa xác minh lượng tìm kiếm, độ khó hoặc CPC. Không tạo một trang cho mỗi biến thể.",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Nguồn: tổng hợp nội dung trao đổi ngày 25/10/2026; thị trường Mỹ, ngôn ngữ tiếng Anh.",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Từ khóa tiếng Anh",
+        "Nghĩa tiếng Việt",
+        "Nhóm chủ đề",
+        "Loại trang gợi ý",
+        "Ghi chú triển khai"
+      ],
+      [
+        "veteran t shirts",
+        "Áo thun cựu quân nhân",
+        "Tổng quát",
+        "Danh mục",
+        "Gom biến thể cùng ý định vào một trang."
+      ],
+      [
+        "veteran shirts",
+        "Áo cựu quân nhân",
+        "Tổng quát",
+        "Danh mục",
+        "Gom biến thể cùng ý định vào một trang."
+      ]
+    ]
+  },
+  "Ke hoach Ads": {
+    "non_empty_rows": 19,
+    "header": [
+      "Nhóm Ads và từ khóa cân nhắc phủ định",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "sample": [
+      [
+        "Đây là danh sách nghiên cứu, chưa phải kế hoạch chi ngân sách. Không phủ định quá rộng các từ free, gift hoặc design.",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Nguồn: tổng hợp nội dung trao đổi ngày 25/10/2026; thị trường Mỹ, ngôn ngữ tiếng Anh.",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Mục đích",
+        "Từ khóa tiếng Anh",
+        "Nghĩa / nhóm",
+        "Trang đích",
+        "Điều kiện sử dụng"
+      ],
+      [
+        "Nghiên cứu chạy Ads",
+        "veteran t shirts",
+        "Áo thun cựu quân nhân",
+        "Danh mục tổng",
+        "Kiểm tra CPC và chuyển đổi trước khi chi ngân sách"
+      ],
+      [
+        "Nghiên cứu chạy Ads",
+        "funny veteran shirts",
+        "Áo hài hước",
+        "Danh mục hài hước",
+        "Trang đích có mẫu áo phù hợp"
+      ]
+    ]
+  },
+  "Y tuong thiet ke": {
+    "non_empty_rows": 14,
+    "header": [
+      "10 hướng thiết kế áo",
+      "",
+      "",
+      ""
+    ],
+    "sample": [
+      [
+        "Ý tưởng sáng tạo chưa kiểm chứng bán chạy. Kiểm tra quyền dùng tên, logo, hình và câu chữ trước khi thương mại hóa.",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Nguồn: tổng hợp nội dung trao đổi ngày 25/10/2026; thị trường Mỹ, ngôn ngữ tiếng Anh.",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Ý tưởng",
+        "Cách thể hiện",
+        "Từ khóa liên quan",
+        "Lưu ý"
+      ],
+      [
+        "Cựu quân nhân và người bố",
+        "Chữ lớn, bố cục gọn, nhấn vai trò làm bố",
+        "veteran dad shirts",
+        "Thiết kế gốc; chưa kiểm chứng bán chạy"
+      ],
+      [
+        "Người ông và gia đình",
+        "Chữ cổ điển, tùy chỉnh tên hoặc năm",
+        "veteran grandpa shirts",
+        "Xác nhận người nhận là cựu quân nhân"
+      ]
+    ]
+  },
+  "50 tieu bang": {
+    "non_empty_rows": 52,
+    "header": [
+      "50 TIỂU BANG HOA KỲ",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "sample": [
+      [
+        "STT",
+        "Tiểu bang",
+        "Mã USPS",
+        "Lá cờ",
+        "Ảnh gốc",
+        "Trang nguồn cờ"
+      ],
+      [
+        "1.0",
+        "Alabama",
+        "AL",
+        "",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Alabama.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Alabama.svg"
+      ],
+      [
+        "2.0",
+        "Alaska",
+        "AK",
+        "",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Alaska.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Alaska.svg"
+      ],
+      [
+        "3.0",
+        "Arizona",
+        "AZ",
+        "",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arizona.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Arizona.svg"
+      ],
+      [
+        "4.0",
+        "Arkansas",
+        "AR",
+        "",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arkansas.svg",
+        "https://en.wikipedia.org/wiki/File:Flag_of_Arkansas.svg"
+      ]
+    ]
+  },
+  "Dan so va tuoi": {
+    "non_empty_rows": 52,
+    "header": [
+      "DÂN SỐ, GIỚI TÍNH VÀ TUỔI — ACS 2024",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "sample": [
+      [
+        "Tiểu bang",
+        "Dân số",
+        "Nam (%)",
+        "Nữ (%)",
+        "Tuổi trung vị",
+        "Dưới 18 (%)",
+        "18–24 (%)",
+        "25–34 (%)",
+        "35–44 (%)",
+        "45–54 (%)",
+        "55–64 (%)",
+        "65+ (%)"
+      ],
+      [
+        "Alabama",
+        "5157699",
+        "0.4828802534",
+        "0.5171197466",
+        "39.6",
+        "0.2195170753",
+        "0.09411852068",
+        "0.1270618933",
+        "0.1276509157",
+        "0.1208575762",
+        "0.125601746",
+        "0.1851922728"
+      ],
+      [
+        "Alaska",
+        "740133",
+        "0.5273390053",
+        "0.4726609947",
+        "36.3",
+        "0.2353604014",
+        "0.09189024135",
+        "0.1530954572",
+        "0.1461872393",
+        "0.1116285857",
+        "0.1140065367",
+        "0.1478315384"
+      ],
+      [
+        "Arizona",
+        "7582384",
+        "0.4989041705",
+        "0.5010958295",
+        "39.4",
+        "0.2091362031",
+        "0.09586430864",
+        "0.1381800236",
+        "0.1293862194",
+        "0.1146151395",
+        "0.1161572666",
+        "0.1966608391"
+      ],
+      [
+        "Arkansas",
+        "3088354",
+        "0.4913704841",
+        "0.5086295159",
+        "39.1",
+        "0.2260560156",
+        "0.09440077141",
+        "0.1264502062",
+        "0.1315001454",
+        "0.1188814495",
+        "0.1205085298",
+        "0.1822028822"
+      ]
+    ]
+  },
+  "Chung toc": {
+    "non_empty_rows": 52,
+    "header": [
+      "CHỦNG TỘC VÀ SẮC TỘC — ACS 2024",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "sample": [
+      [
+        "Tiểu bang",
+        "Trắng (%)",
+        "Đen / Mỹ gốc Phi (%)",
+        "Bản địa Mỹ / Alaska (%)",
+        "Châu Á (%)",
+        "Hawaii / Thái Bình Dương (%)",
+        "Chủng tộc khác (%)",
+        "Đa chủng tộc (%)",
+        "Hispanic / Latino (%)"
+      ],
+      [
+        "Alabama",
+        "0.6401166489",
+        "0.2524588969",
+        "0.004959963736",
+        "0.015431106",
+        "0.001118909808",
+        "0.02492875214",
+        "0.06098572251",
+        "0.0595160749"
+      ],
+      [
+        "Alaska",
+        "0.5870836728",
+        "0.02506036077",
+        "0.1405463613",
+        "0.0595528101",
+        "0.01708882052",
+        "0.02097731083",
+        "0.1496906637",
+        "0.07732258932"
+      ],
+      [
+        "Arizona",
+        "0.5731275282",
+        "0.04759294702",
+        "0.0401753591",
+        "0.03992622901",
+        "0.001796136941",
+        "0.09336364394",
+        "0.2040181558",
+        "0.3212262792"
+      ],
+      [
+        "Arkansas",
+        "0.6818985129",
+        "0.1417599796",
+        "0.005490303249",
+        "0.01786841793",
+        "0.003806558445",
+        "0.03128106428",
+        "0.1178951636",
+        "0.09541360867"
+      ]
+    ]
+  },
+  "Ton giao": {
+    "non_empty_rows": 52,
+    "header": [
+      "TÔN GIÁO — PEW 2023–2024 (NGƯỜI TỪ 18 TUỔI)",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "sample": [
+      [
+        "Tiểu bang",
+        "Kitô giáo (%)",
+        "Tôn giáo khác (%)",
+        "Không liên kết tôn giáo (%)",
+        "Tin Lành evangelical (%)",
+        "Tin Lành mainline (%)",
+        "Tin Lành truyền thống người Đen (%)",
+        "Công giáo (%)",
+        "Mormon (%)",
+        "Chính thống giáo (%)",
+        "Nhân Chứng Giê-hô-va (%)",
+        "Kitô giáo khác (%)",
+        "Do Thái giáo (%)",
+        "Hồi giáo (%)",
+        "Phật giáo (%)",
+        "Ấn Độ giáo (%)",
+        "Nguồn"
+      ],
+      [
+        "Alabama",
+        "0.73",
+        "0.03",
+        "0.22",
+        "0.43",
+        "0.1",
+        "0.13",
+        "0.06",
+        "<1%",
+        "<1%",
+        "<1%",
+        "0.01",
+        "<1%",
+        "0.01",
+        "0.01",
+        "<1%",
+        "https://www.pewresearch.org/religious-landscape-study/state/alabama/"
+      ],
+      [
+        "Alaska",
+        "0.56",
+        "0.06",
+        "0.33",
+        "0.26",
+        "0.09",
+        "0.01",
+        "0.15",
+        "0.03",
+        "0.01",
+        "<1%",
+        "0.02",
+        "0.01",
+        "<1%",
+        "0.01",
+        "<1%",
+        "https://www.pewresearch.org/religious-landscape-study/state/alaska/"
+      ],
+      [
+        "Arizona",
+        "0.58",
+        "0.1",
+        "0.31",
+        "0.19",
+        "0.1",
+        "0.01",
+        "0.21",
+        "0.05",
+        "<1%",
+        "0.01",
+        "0.01",
+        "0.01",
+        "0.01",
+        "0.02",
+        "0.02",
+        "https://www.pewresearch.org/religious-landscape-study/state/arizona/"
+      ],
+      [
+        "Arkansas",
+        "0.79",
+        "0.03",
+        "0.18",
+        "0.5",
+        "0.13",
+        "0.08",
+        "0.05",
+        "<1%",
+        "0.01",
+        "<1%",
+        "0.01",
+        "<1%",
+        "<1%",
+        "<1%",
+        "<1%",
+        "https://www.pewresearch.org/religious-landscape-study/state/arkansas/"
+      ]
+    ]
+  },
+  "Du lieu goc": {
+    "non_empty_rows": 52,
+    "header": [
+      "SỐ NGƯỜI — DỮ LIỆU ACS 2024",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "sample": [
+      [
+        "Tiểu bang",
+        "FIPS",
+        "Dân số",
+        "Nam",
+        "Nữ",
+        "Tuổi trung vị",
+        "Dưới 18",
+        "18–24",
+        "25–34",
+        "35–44",
+        "45–54",
+        "55–64",
+        "65+",
+        "Trắng",
+        "Đen",
+        "Bản địa Mỹ",
+        "Châu Á",
+        "Hawaii / TBD",
+        "Khác",
+        "Đa chủng tộc",
+        "Hispanic / Latino"
+      ],
+      [
+        "Alabama",
+        "01",
+        "5157699.0",
+        "2490551.0",
+        "2667148.0",
+        "39.6",
+        "1132203.0",
+        "485435.0",
+        "655347.0",
+        "658385.0",
+        "623347.0",
+        "647816.0",
+        "955166.0",
+        "3301529.0",
+        "1302107.0",
+        "25582.0",
+        "79589.0",
+        "5771.0",
+        "128575.0",
+        "314546.0",
+        "306966.0"
+      ],
+      [
+        "Alaska",
+        "02",
+        "740133.0",
+        "390301.0",
+        "349832.0",
+        "36.3",
+        "174198.0",
+        "68011.0",
+        "113311.0",
+        "108198.0",
+        "82620.0",
+        "84380.0",
+        "109415.0",
+        "434520.0",
+        "18548.0",
+        "104023.0",
+        "44077.0",
+        "12648.0",
+        "15526.0",
+        "110791.0",
+        "57229.0"
+      ],
+      [
+        "Arizona",
+        "04",
+        "7582384.0",
+        "3782883.0",
+        "3799501.0",
+        "39.4",
+        "1585751.0",
+        "726880.0",
+        "1047734.0",
+        "981056.0",
+        "869056.0",
+        "880749.0",
+        "1491158.0",
+        "4345673.0",
+        "360868.0",
+        "304625.0",
+        "302736.0",
+        "13619.0",
+        "707919.0",
+        "1546944.0",
+        "2435661.0"
+      ],
+      [
+        "Arkansas",
+        "05",
+        "3088354.0",
+        "1517526.0",
+        "1570828.0",
+        "39.1",
+        "698141.0",
+        "291543.0",
+        "390523.0",
+        "406119.0",
+        "367148.0",
+        "372173.0",
+        "562707.0",
+        "2105944.0",
+        "437805.0",
+        "16956.0",
+        "55184.0",
+        "11756.0",
+        "96607.0",
+        "364102.0",
+        "294671.0"
+      ]
+    ]
+  },
+  "Giai thich": {
+    "non_empty_rows": 18,
+    "header": [
+      "NGUỒN VÀ CÁCH ĐỌC",
+      ""
+    ],
+    "sample": [
+      [
+        "Mục",
+        "Giải thích"
+      ],
+      [
+        "Phạm vi",
+        "50 tiểu bang. Không gồm Washington, D.C. và Puerto Rico."
+      ],
+      [
+        "Dân số",
+        "ACS 2024 1-year estimates; số liệu khảo sát năm 2024, không phải dân số hiện tại năm 2026."
+      ],
+      [
+        "Nguồn Census",
+        "https://data.census.gov/table/ACSDT1Y2024.B01001"
+      ],
+      [
+        "Tải dữ liệu",
+        "https://api.censusreporter.org/1.0/data/show/acs2024_1yr?table_ids=B01001,B01002,B02001,B03003&geo_ids=040|01000US"
+      ]
+    ]
+  }
+}
